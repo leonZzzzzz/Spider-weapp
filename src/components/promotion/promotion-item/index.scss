@@ -1,0 +1,109 @@
+.promotion-item {
+  position: relative;
+  display: flex;
+  background: #fff;
+  padding: 30px;
+  &__left {
+    // border-radius: 10px;
+    margin-right: 30px;
+    width: 250px;
+    height: 150px;
+    flex-shrink: 0;
+    @include img();
+  }
+  &__right {
+    position: relative;
+    flex: 1;
+    font-size: 28px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    .title {
+      line-height: 1.4;
+      @include ellipsis-line();
+      margin-bottom: 10px;
+    }
+    .p-bottom-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .price-wrap {
+        display: flex;
+        align-items: center;
+        .price {
+          @include price-with-small-symbol(32px, $price-color, 3px, 15px, bold);
+        }
+        .yongjin {
+          margin-left: 10px;
+          font-size: 24px;
+          background-color: rgb(255, 238, 233);
+          border-radius: 30px;
+          height: 30px;
+          line-height: 30px;
+          overflow: hidden;
+          .text {
+            color: #fff;
+            background-color: $price-color;
+            padding: 0 10px;
+          }
+          .amount {
+            color: $price-color;
+            padding-right: 10px;
+            position: relative;
+            &::before {
+              position: absolute;
+              content: '';
+              width: 0;
+              height: 0;
+              left: -8px;
+              border-bottom: 30px solid rgb(255, 238, 233);
+              border-right: 8px solid transparent;
+              border-left: 8px solid transparent;
+            }
+          }
+        }
+      }
+      .tui {
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 0;
+        font-size: 28px;
+        // background: rgb(34, 42, 83);
+        background: $color-primary;
+        line-height: 1;
+        color: #fff;
+      }
+    }
+    .time-wrap {
+      margin-top: 10px;
+      font-size: 24px;
+      color: $color-desc;
+      display: flex;
+      justify-content: space-between;
+    }
+    .desc {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      // width: 100%;
+      .price {
+        font-size: 32px;
+        flex-shrink: 0;
+        color: $price-color;
+        .num {
+          @include price-with-small-symbol(32px, $price-color, 3px, 15px, bold);
+        }
+      }
+      .tags {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+.promotion-item-line {
+  @include top-line(30px);
+}

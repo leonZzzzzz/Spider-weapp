@@ -1,0 +1,65 @@
+// page {
+//   background-color: #fff;
+//   min-height: 100%;
+// }
+.withdrawal-status {
+  .top-tip {
+    font-size: 28px;
+    padding: 10px 30px;
+    background-color: rgb(245, 236, 190);
+    color: #333;
+    .qcfont {
+      color: rgb(221, 193, 52);
+      margin-right: 10px;
+    }
+  }
+  .box {
+    margin: 40px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .success-status {
+    padding: 80px;
+    text-align: center;
+    .qcfont {
+      color: rgb(34, 193, 80);
+      font-size: 120px;
+    }
+    .status-title {
+      font-size: 32px;
+      font-weight: normal;
+      margin-top: 25px;
+    }
+    .status-info {
+      font-size: 28px;
+      color: #b1b1b1;
+      margin-top: 20px;
+    }
+  }
+  .list {
+    @include top-line(30px, 30px);
+    padding: 40px 0;
+    // margin-top: 50px;
+    font-size: 28px;
+    .cell {
+      display: flex;
+      align-items: center;
+      padding: 10px 100px;
+      .label {
+        flex-shrink: 0;
+      }
+      .price {
+        color: $price-color;
+      }
+      .ongoing {
+        color: $price-color;
+      }
+      .fail {
+        color: $color-grey;
+      }
+      .finish {
+        color: rgb(34, 193, 80);
+      }
+    }
+  }
+}

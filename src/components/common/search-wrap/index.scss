@@ -1,0 +1,96 @@
+.qc-search-bar .search-bar {
+  background: var(--color-primary);
+}
+.search-wrap {
+  display: flex;
+  align-items: center;
+  background: var(--color-primary);
+  padding: 0 30px;
+  height: 100px;
+  position: relative;
+  .search-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 60px;
+    border-radius: 8px;
+    background: $search-input-box-color;
+    font-size: 28px;
+    color: #999;
+    position: relative;
+    box-sizing: border-box;
+    .icon {
+      flex-shrink: 0;
+      margin-right: 20px;
+      color: #999;
+    }
+    .input {
+      flex: 1;
+      color: #000;
+    }
+    .close {
+      position: absolute;
+      right: 20px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background: $color-grey;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      font-size: 20px;
+      z-index: 11;
+    }
+  }
+  .kefu {
+    position: relative;
+    margin-left: 30px;
+    .qcfont {
+      font-size: 40px;
+      color: #fff;
+    }
+  }
+  .kefu-img {
+    @include img();
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.kefu-dialog {
+  .kefu-btn {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+    &:first-child {
+      margin-bottom: 30px;
+    }
+    button {
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 32px;
+      line-height: 3;
+      border-radius: 0;
+    }
+  }
+}
+
+.qc-search-bar {
+  height: 100px;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  .height-level {
+    flex-shrink: 0;
+    padding: 0;
+    line-height: 2;
+    margin: 0;
+    font-size: 26px;
+    color: #fff;
+    border: 0;
+    width: 160px;
+    box-sizing: border-box;
+  }
+}

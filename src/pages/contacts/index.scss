@@ -1,0 +1,23 @@
+page {
+  background: #fff;
+  min-height: 100%;
+}
+.list {
+  background: #fff;
+}
+.group-items {
+  background: var(--color-primary);
+  display: flex;
+  margin-bottom: 30px;
+  .item {
+    flex: 1;
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+    font-size: 28px;
+    .qcfont {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+  }
+}

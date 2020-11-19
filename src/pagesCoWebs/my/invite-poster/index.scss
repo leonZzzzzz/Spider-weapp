@@ -1,0 +1,14 @@
+
+.btn-fixd{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  button {
+    border-radius: 0;
+    color: #fff;
+    background: var(--color-primary);
+    line-height: 100px;
+  }
+}

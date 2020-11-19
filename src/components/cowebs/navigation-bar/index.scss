@@ -1,0 +1,26 @@
+
+.navigation-bar {
+  // background: rgb(255, 51, 51);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  // height: 44Px;
+  .search {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    height: 32Px;
+    box-sizing: border-box;
+    margin: 0 120Px 0 15Px;
+    font-size: 28px;
+    padding: 0 30px;
+    border-radius: 32Px;
+    .qcfont {
+      margin-right: 20px;
+      font-size: 26px;
+    }
+  }
+}

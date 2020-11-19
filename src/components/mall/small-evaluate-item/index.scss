@@ -1,0 +1,57 @@
+
+.small-evaluate-item {
+  margin: 20px 30px 20px 0;
+  background: #fff;
+  display: inline-flex;
+  height: 200px;
+  width: 500px;
+  box-shadow: -1px 0px 5px rgb(226, 226, 226), 0px -1px 5px rgb(226, 226, 226), 1px 0px 5px rgb(226, 226, 226), 0px 1px 5px rgb(226, 226, 226);
+  .left {
+    padding: 10px;
+    .user {
+      display: flex;
+      .head-image {
+        width: 80px;
+        height: 80px;
+        line-height: 0;
+        overflow: hidden;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin-right: 20px;
+        image {
+          width: 100%;
+        }
+      }
+      .info {
+        .name {
+          color: $color-grey;
+        }
+        .at-rate .star {
+          color: $red-color;
+          font-size: 28px;
+        }
+      }
+    }
+    .comment {
+      @include ellipsis-line();
+      margin-top: 20px;
+      color: rgb(71, 71, 71);
+      // white-space: wrap;
+      white-space: pre-wrap; 
+      // width: 280px;
+    }
+  }
+  .right {
+    width: 200px;
+    height: 200px;
+    line-height: 0;
+    flex-shrink: 0;
+    image {
+      width: 100%;
+    }
+  }
+}
+
+.no-left {
+  margin-left: 30px;
+}

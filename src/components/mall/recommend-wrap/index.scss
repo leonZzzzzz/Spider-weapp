@@ -1,0 +1,22 @@
+
+.recommend-wrap {
+  background: #fff;
+  .recommend-title-wrap {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .more {
+      color: $color-grey;
+      font-size: 28px;
+      .qcfont {
+        margin-left: 15px;
+        font-size: 24px;
+      }
+    }
+  }
+  .list {
+    white-space: nowrap;
+    background: #fff;
+  }
+}

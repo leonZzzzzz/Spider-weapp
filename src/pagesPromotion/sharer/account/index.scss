@@ -1,0 +1,118 @@
+.account {
+  .take-card {
+    margin-bottom: 20px;
+    font-size: 26px;
+    background-color: #fff;
+    padding: 30px;
+    .input-box {
+      display: flex;
+      align-items: center;
+      padding: 0 30px;
+      height: 100px;
+      // margin-bottom: 20px;
+      @include bottom-line();
+      background-color: rgb(248, 248, 248);
+      border-radius: 10px;
+      margin: 20px 0;
+      font-size: 32px;
+      &:first-child {
+        margin-top: 0;
+      }
+      .symbol {
+        // font-weight: bold;
+        font-size: 40px;
+      }
+      .label {
+        color: $color-grey;
+        width: 150px;
+        flex-shrink: 0;
+        font-size: 30px;
+      }
+      .qcfont {
+        color: $color-grey;
+      }
+      input {
+        width: 100%;
+        // font-size: 50px;
+        padding: 0 10px;
+        height: 90px;
+      }
+      .price-input {
+        font-size: 50px;
+      }
+      .all {
+        @include reset-btn-style();
+        color: rgb(87, 133, 182);
+        font-size: 28px;
+        flex-shrink: 0;
+        &[disabled] {
+          color: rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+    .grey {
+      color: $color-grey;
+      // text-align: center;
+    }
+    .take-btn {
+      margin-top: 50px;
+      border-radius: 10px;
+      color: #fff;
+      // font-size: 32px;
+      background-color: var(--color-primary);
+      &[disabled] {
+        opacity: 0.7;
+      }
+    }
+  }
+  .complete-card {
+    // margin-top: 20px;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .total-amount {
+      margin: 0 30px;
+    }
+    .qc-icon-yitixian {
+      color: $price-color;
+      font-size: 36px;
+    }
+  }
+
+}
+.tip-dialog {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px 60px;
+  width: 600px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 36px;
+  .content {
+    text-align: left;
+    font-size: 30px;
+    color: #454b4f;
+    padding: 60px 0;
+    line-height: 1.5;
+    .grey {
+      color: $color-grey;
+      font-size: 28px;
+    }
+  }
+  .tip-btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    button {
+      margin: 0;
+      flex: 1;
+    }
+    .tip-btn {
+      background-color: $color-primary;
+      color: #fff;
+      // margin: 0 50px;
+      margin-left: 30px;
+    }
+  }
+}

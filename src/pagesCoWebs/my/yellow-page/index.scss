@@ -1,0 +1,43 @@
+.page{
+    position:relative;
+}
+.swiper-container{
+    width:100%;
+    height:350px !important;
+    .container{
+        width:100%;
+        height:100%;
+        image{
+            width:100%;
+        height:350px;
+        }
+    }
+}
+.pagetext{
+    margin:40px 20px;
+font-size:26px;
+font-weight:blod;
+}
+.pdfpic{
+    margin:40px 20px;
+    display:flex;
+    flex-direction: column;
+    image{
+        width:100%;
+    }
+}
+.btn{
+    position: fixed;
+bottom: 0;
+background: #fff;
+width: 100%;
+padding: 30rpx 0rpx;
+text-align: center;
+    text{
+        background:rgb(101, 158, 245);
+        padding:20px 300px;
+        text-align: center;
+        color:#fff;
+        border-radius: 10px;
+    }
+}

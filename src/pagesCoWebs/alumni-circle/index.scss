@@ -1,0 +1,126 @@
+// page {
+//   min-height: 100%;
+// }
+// .alumni-circle {
+//   min-height: 100%;
+// }
+// .alumni-circle {
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+// }
+.card__swiper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+// .card__swiper 
+.card__swiper-item {
+  // position: fixed;
+  height: 100%;
+  @include img();
+  .user-card {
+    line-height: 1.8;
+    position: fixed;
+    bottom: 30px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    width: 520px;
+    padding: 30px;
+    .name {
+      font-size: 50px;
+      // font-weight: bold;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .desc {
+      @include ellipsis-line(3);
+      font-size: 28px;
+    }
+    .user__tags {
+      margin-top: 30px;
+      .tag {
+        background: rgba(255, 255, 255, 0.45);
+        padding: 6px 24px;
+        border-radius: 8px;
+        font-size: 26px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.share-btn-dialog {
+  background: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  .item {
+    padding: 40px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    flex: 1;
+    line-height: 1.5;
+    font-size: 30px;
+    .qcfont {
+      font-size: 100px;
+    }
+    .qc-icon-weixin {
+      color: rgb(65, 175, 53);
+    }
+    .qc-icon-haibao1 {
+      color: rgb(255, 168, 0);
+    }
+    &:last-child {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 90px;
+        bottom: 90px;
+        border-left: 1Px solid #dadada;
+      }
+    }
+  }
+  .hover-item {
+    background: rgb(228, 228, 228);
+  }
+}
+
+.poster-dialog {
+  width: 630px;
+  box-sizing: border-box;
+  .poster-wrap {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.822);
+    background: rgb(173, 173, 173);
+    position: relative;
+    min-height: 1000px;
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: rgba(255, 255, 255, 0.822);
+      // color: #000;
+      // font-size: 40px;
+      z-index: 1;
+    }
+    image {
+      width: 100%;
+      // height: 100%; 
+      @include img();
+    }
+  }
+  button {
+    margin-top: 30px;
+  }
+}

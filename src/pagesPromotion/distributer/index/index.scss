@@ -1,0 +1,166 @@
+.promotion {
+  // $color-distributer
+  .user-container {
+    background-color: #fff;
+    margin-bottom: 20px;
+    .user-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      .info {
+        display: flex;
+        align-items: center;
+        .name-text {
+          margin-left: 30px;
+          .name {
+            font-size: 32px;
+            @include text-ellipsis();
+            width: 430px;
+          }
+          .rank {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 24px;
+            padding-right: 15px;
+            height: 40px;
+            line-height: 1;
+            // line-height: 34px;
+            border-radius: 34px;
+            background-color: rgb(255, 205, 86);
+            color: rgb(59, 59, 59);
+            .qcfont {
+              color: rgb(255, 150, 0);
+              font-size: 26px;
+              margin: 0 8px;
+            }
+          }
+        }
+      }
+      .rule {
+        color: $color-grey;
+        font-size: 24px;
+        margin-left: 30px;
+      }
+    }
+    .summary-flex {
+      display: flex;
+      .item {
+        color: $color-grey;
+        text-align: center;
+        flex: 1;
+        padding: 30px;
+        position: relative;
+        font-size: 24px;
+        // &:not(:first-child) {
+        //   @include left-line(65px, 65px, rgb(206, 206, 206));
+        // }
+        .item-desc {
+          margin-top: 10px;
+        }
+        .num {
+          font-weight: bold;
+          font-size: 40px;
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+    .price-wrap {
+      background-color: var(--color-primary);
+      background-image: url('https://athena-1255600302.cosgz.myqcloud.com/attachments/images/bg-line.png');
+      background-size: 100% 100%;
+      margin: 0 30px;
+      border-radius: 10px;
+      color: rgb(206, 206, 206);
+      font-size: 24px;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .total-wrap {
+        display: flex;
+        .top-price {
+          &:first-child {
+            margin-right: 40px;
+          }
+          .total-price {
+            font-size: 40px;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 10px;
+          }
+        }
+      }
+      .tixian-btn {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 0 30px;
+        height: 60px;
+        line-height: 60px;
+        // color: rgb(38, 46, 88);
+        color: var(--color-primary);
+        font-size: 28px;
+        margin: 0;
+        flex-shrink: 0;
+      }
+    }
+    .btn-wrap {
+      padding: 30px;
+      display: flex;
+      button {
+        margin: 0;
+        flex: 1;
+        line-height: 2.6;
+        font-size: 30px;
+        &.border {
+          border: 1px solid $color-distributer;
+          color: $color-distributer;
+        }
+        &.primary {
+          background-color: $color-distributer;
+          color: #fff;
+          margin-left: 35px;
+        }
+      }
+    }
+  }
+  .fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 2;
+  }
+}
+
+.poster-dialog {
+  width: 630px;
+  box-sizing: border-box;
+  .poster-wrap {
+    box-sizing: border-box;
+    background: rgb(173, 173, 173);
+    position: relative;
+    min-height: 1000px;
+  }
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(98, 98, 98, 0.822);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    z-index: 10000;
+    font-size: 32px;
+    line-height: 60px;
+    // .qcfont {
+    //   font-size: 32px;
+    //   line-height: 60px;
+    // }
+  }
+  button {
+    margin-top: 30px;
+  }
+}

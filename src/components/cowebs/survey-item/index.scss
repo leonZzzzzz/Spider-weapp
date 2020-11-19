@@ -1,0 +1,24 @@
+.resource-item-box {
+  padding: 0 30px 30px;
+}
+.p-t {
+  padding-top: 30px;
+}
+.resource-item {
+  background: #fff;
+  // margin: 30px;
+  // margin-bottom: 30px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  .cover {
+    @include img();
+    height: 350px;
+  }
+  .title {
+    @include ellipsis-line();
+    padding: 30px;
+    font-size: 32px;
+    line-height: 1.4;
+  }
+}

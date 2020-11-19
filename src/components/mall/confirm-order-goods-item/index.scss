@@ -1,0 +1,53 @@
+
+.confirm-order-goods-item {
+  background: #fff;
+  display: flex;
+  padding: 30px;
+  @include bottom-line(30px);
+  .left {
+    width: 180px;
+    height: 180px;
+    line-height: 0;
+    margin-right: 30px;
+    flex-shrink: 0;
+    overflow: hidden;
+    image {
+      width: 100%;
+    }
+  }
+  .right {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    position: relative;
+    .top {
+      .title {
+        @include ellipsis-line();
+      }
+      .specs {
+        margin-top: 10px;
+        color: $color-grey;
+        font-size: 28px;
+      }
+    }
+    .price-wrap {
+      display: flex;
+      align-items: center;
+      .price {
+        @include price-with-small-symbol(32px, $price-color, 5px, 15px);
+      }
+    }
+    .qty {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 28px;
+      color: $color-grey;
+    }
+  }
+}
+
+.top-line {
+  @include top-line(30px);
+}

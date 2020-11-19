@@ -1,0 +1,42 @@
+.qc-alumni-circle {
+  // padding-bottom: 30px;
+  // background: #fff;
+  .overflow-x {
+    white-space: nowrap;
+    padding-top: 30px;
+    background: #fff;
+  }
+}
+
+.tip-dialog {
+  line-height: 1.5;
+  text-align: center;
+  font-size: 30px;
+  white-space: pre-wrap;
+  background: #fff;
+  padding: 50px 0;
+  width: 600px;
+  position: relative;
+  .bottom {
+    width: 70%;
+    margin: 20px auto 10px;
+  }
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 40px;
+  }
+  button {
+    background-color: var(--color-primary);
+    color: #fff;
+    line-height: 2.3;
+    font-size: 32px;
+  }
+  
+  button:after,
+  button::before {
+    display: none;
+  }
+}

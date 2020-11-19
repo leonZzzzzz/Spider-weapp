@@ -1,0 +1,128 @@
+.membership {
+  .bottom-bar {
+    @include top-line();
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 110px;
+    background-color: #fff;
+    display: flex;
+    z-index: 2;
+    .home-icon {
+      color: $color-primary;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      .qcfont {
+        font-size: 40px;
+      }
+    }
+    .open-btn {
+      @include reset-btn-style;
+      width: 100%;
+      background-color: $color-primary;
+      color: #fff;
+      line-height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.4;
+      .time {
+        font-size: 28px;
+      }
+    }
+  }
+  .open-dialog {
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 100px 30px 30px;
+    position: relative;
+    .qc-icon-close {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      color: rgba(204, 204, 204, 1);
+      font-size: 36px;
+    }
+    .group {
+      .item {
+        background: linear-gradient(-90deg, rgba(231, 237, 241, 1) 0%, rgba(237, 244, 248, 1) 100%);
+        display: flex;
+        padding: 30px;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 5px 10px 5px rgb(231, 233, 235);
+        border-radius: 15px;
+        .left {
+          display: inline-flex;
+          align-items: center;
+          font-size: 32px;
+          .cover {
+            @include img();
+            // .cover-icon{
+            //   margin-top: 5px;
+            // }
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            .qcfont {
+              font-size: 40px;
+              line-height: 60px;
+            }
+          }
+        }
+        .right {
+          display: inline-flex;
+          align-items: center;
+          font-size: 32px;
+          .checked {
+            margin-left: 30px;
+            .qcfont {
+              background-color: #fff;
+              border-radius: 50%;
+              transition: all 0.3s;
+              font-size: 40px;
+              color: #d0d0d0;
+              line-height: 1;
+            }
+            .qc-icon-checked {
+              color: #ff6000;
+            }
+          }
+        }
+      }
+    }
+    .open-btn {
+      background-color: $color-primary;
+      color: #fff;
+      margin-top: 50px;
+      font-size: 32px;
+      line-height: 2.8;
+    }
+  }
+  .tip-dialog {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px 60px;
+    width: 600px;
+    box-sizing: border-box;
+    text-align: center;
+    .content {
+      text-align: left;
+      font-size: 30px;
+      color: #454b4f;
+      padding: 60px 0;
+    }
+    .tip-btn {
+      background-color: $color-primary;
+      color: #fff;
+      margin: 0 50px;
+    }
+  }
+}

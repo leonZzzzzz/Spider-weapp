@@ -1,0 +1,36 @@
+.wallet-item {
+  background: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left {
+    .time {
+      color: $color-grey;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  }
+  .right {
+    text-align: right;
+    flex-shrink: 0;
+    margin-left: 30px;
+    .price {
+      font-size: 28px;
+    }
+    .add {
+      color: rgb(49, 180, 2);
+    }
+    .subtract {
+      color: #000;
+    }
+    .balance {
+      color: $color-grey;
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  }
+}
+.line {
+  @include top-line(30px);
+}

@@ -1,0 +1,79 @@
+.rule-group {
+  padding: 30px;
+  .title {
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    .qcfont {
+      margin: 0 30px;
+      color: $color-distributer;
+    }
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    .item {
+      padding: 30px;
+      @include bottom-line(30px);
+      .title-wrap {
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .icon-img {
+          @include img();
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          flex-shrink: 0;
+          .qcfont {
+            line-height: 1.2;
+            color: rgb(255, 150, 0);
+          }
+        }
+      }
+      .ratio, .desc {
+        margin-top: 10px;
+      }
+      .ratio {
+        color: rgb(219, 200, 104);
+      }
+      .desc {
+        color: rgb(80, 80, 80);
+        margin-top: 10px;
+        font-size: 28px;
+      }
+    }
+    .item-alone {
+      padding: 30px;
+      font-size: 28px;
+      display: flex;
+      color: rgb(80, 80, 80);
+      .icon-img {
+        @include img();
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        flex-shrink: 0;
+        .qcfont {
+          line-height: 1.2;
+          color: $color-distributer;
+        }
+      }
+    }
+  }
+  .rank {
+    .desc {
+      margin-left: 40px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '·';
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgb(42, 42, 42);
+      }
+    }
+  }
+}

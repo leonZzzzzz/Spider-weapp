@@ -1,0 +1,63 @@
+.p-order-item {
+  background-color: #fff;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 10px;
+  .user-wrap {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    @include bottom-line();
+    .user {
+      font-size: 28px;
+      width: 100%;
+      margin: 0 20px;
+    }
+    .time {
+      font-size: 24px;
+      color: $color-grey;
+    }
+    .status {
+      flex-shrink: 0;
+      color: $color-grey;
+      font-size: 28px;
+    }
+    .finish {
+      color: rgb(31, 178, 7);
+    }
+    .cancel {
+      color: rgb(152, 152, 154);
+    }
+    .ongoing {
+      color: rgb(255, 150, 0);
+    }
+  }
+  .info-wrap {
+    padding-top: 20px;
+    display: flex;
+    .cover {
+      @include img();
+      width: 250px;
+      height: 150px;
+      flex-shrink: 0;
+      margin-right: 30px;
+    }
+    .right {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: column;
+      font-size: 26px;
+      color: $color-grey;
+      .title {
+        font-size: 30px;
+        color: #000;
+      }
+      .amount {
+        color: $price-color;
+      }
+    }
+  }
+}
+.top-line {
+  @include top-line();
+}

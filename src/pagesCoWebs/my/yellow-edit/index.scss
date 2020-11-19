@@ -1,0 +1,90 @@
+.pics{
+    display:flex;
+    margin:20px 0px 20px 20px;
+    flex-wrap: wrap;
+}
+.items {
+      @include img();
+      position: relative;
+      width: calc(650px / 4);
+      height: calc(650px / 4);
+      margin-right: 20rpx;
+      margin-bottom: 20rpx;
+    //   &:nth-child(3n + 3) {
+    //     margin-right: 0;
+    //   }
+      .close {
+        position: absolute;
+        color: $price-color;
+        right: 16rpx;
+        top: 20rpx;
+        width: 30rpx;
+        height: 30rpx;
+        background: #fff;
+        line-height: 38px;
+        border-radius: 50%;
+        font-size: 40px;
+      }
+    }
+    .add {
+      width: calc(650px / 4);
+      height: calc(650px / 4);
+      border: 1px dashed $color-grey;
+      box-sizing: border-box;
+      color: $color-grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 28px;
+      .qcfont {
+        font-size: 50px;
+        margin-top: 10px;
+      }
+    }
+    .radius{
+      border-radius: 50%;
+      width:150px;
+      height:150px;
+    }
+    .writeText{
+        margin:40px 20px;
+        font-size: 30px;
+        width: 710px;
+        height:200px;
+    }
+    .uppdf{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: fixed;
+        bottom: 150px;
+        font-size:28px;
+        color:rgb(101, 158, 245);
+        text{
+            text-align: center;
+        }
+    }
+    .btn{
+    position: fixed;
+bottom: 0;
+background: #fff;
+width: 100%;
+padding: 30rpx 0rpx;
+text-align: center;
+    text{
+        background:rgb(101, 158, 245);
+        padding:20px 220px;
+        text-align: center;
+        color:#fff;
+        border-radius: 10px;
+    }
+}
+.pdfimg{
+    width: 710px;
+margin: 20px;
+display:flex;
+image{
+    width:100%;
+}
+}

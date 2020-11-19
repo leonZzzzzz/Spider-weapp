@@ -1,0 +1,61 @@
+.relative {
+  background-color: $page-background-color;
+}
+.account-group {
+  .date {
+    padding: 30px;
+    font-size: 34px;
+    color: $color-grey;
+  }
+  .account-card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 30px;
+    .account-item {
+      font-size: 28px;
+      background-color: #fff;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:not(:first-child) {
+        @include top-line(30px);
+      }
+      .left {
+        font-size: 32px;
+        .time {
+          font-size: 24px;
+          color: $color-grey;
+          margin-top: 10px;
+        }
+        .status {
+          margin-top: 10px;
+          font-size: 26px;
+        }
+        .ongoing {
+          color: $price-color;
+        }
+        .fail {
+          color: $color-grey;
+        }
+        .finish {
+          color: rgb(34, 193, 80);
+        }
+      }
+      .right {
+        flex-shrink: 0;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        .price {
+          font-weight: bold;
+          font-size: 34px;
+        }
+        .qcfont {
+          color: $color-grey;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

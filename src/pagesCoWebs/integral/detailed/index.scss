@@ -1,0 +1,58 @@
+page {
+  background-color: #fff;
+}
+.detailed-box {
+  .card-box {
+    padding: 30px;
+    position: relative;
+    image {
+      width: 100%;
+    }
+    .number-box {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      flex-direction: column;
+      .num {
+        font-size: 60px;
+        font-weight: 700;
+        // margin: 10px 0 20px 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .list {
+    .item {
+      padding: 30px;
+      &:not(:first-child) {
+        @include top-line(30px);
+      }
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 34px;
+        .num {
+          font-size: 32px;
+        }
+        .income {
+          color: #7bbe30;
+        }
+        .deduct {
+          color: #ed6a2c;
+        }
+      }
+      .time {
+        color: #999999;
+        font-size: 30px;
+        margin-top: 15px;
+      }
+    }
+  }
+}

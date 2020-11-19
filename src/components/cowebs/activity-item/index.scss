@@ -1,0 +1,128 @@
+.activity-item {
+  position: relative;
+  display: flex;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  &__left {
+    margin-right: 30px;
+    // width: 280px;
+    // height: 180px;
+    width: 338px;
+    height: 200px;
+    flex-shrink: 0;
+    @include img();
+  }
+  &__right {
+    position: relative;
+    flex: 1;
+    font-size: 28px;
+    .title {
+      line-height: 1.4;
+      @include ellipsis-line();
+      height: 86px;
+      font-size: 32px;
+    }
+    .time-wrap {
+      margin-top: 10px;
+      font-size: 24px;
+      color: $color-desc;
+      display: flex;
+      justify-content: space-between;
+    }
+    .desc {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      // width: 100%;
+      .price {
+        font-size: 32px;
+        flex-shrink: 0;
+        color: $price-color;
+        .num {
+          @include price-with-small-symbol(32px, $price-color, 3px, 15px, bold);
+        }
+      }
+      .tags {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+.activity-item-line {
+  @include top-line(30px);
+}
+
+.activity-item-scrollX {
+  vertical-align: top;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-right: 30px;
+  .activity-box {
+    width: 422px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+  }
+  .top {
+    @include img();
+    width: 100%;
+    height: 250px;
+  }
+  .bottom {
+    padding: 10px 10px 20px;
+    .activity-title {
+      width: 380px;
+      height: 86px;
+      font-size: 30px;
+      @include ellipsis-line();
+      white-space: normal;
+      line-height: 1.5;
+      .category {
+        // background: rgb(34, 146, 249);
+        background: var(--color-primary);
+        color: #fff;
+        border-radius: 4px;
+        padding: 0 10px;
+        margin-right: 8px;
+        line-height: 1;
+        font-size: 28px;
+      }
+    }
+    .time-wrap {
+      margin-top: 20px;
+      font-size: 22px;
+      color: $color-desc;
+      display: flex;
+      justify-content: space-between;
+    }
+    .desc {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      // align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+      .price {
+        font-size: 32px;
+        flex-shrink: 0;
+        color: $price-color;
+        // font-weight: bold;
+        .num {
+          @include price-with-small-symbol(32px, $price-color, 3px, 15px, bold);
+        }
+      }
+      .tags {
+        text-align: right;
+      }
+    }
+  }
+}
+.first {
+  margin-left: 30px;
+}

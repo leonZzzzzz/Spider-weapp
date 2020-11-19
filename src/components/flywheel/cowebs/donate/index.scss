@@ -1,0 +1,42 @@
+$yellow-color: #F47A0E;
+$yellow-bg: #FFF2E7;
+
+.qc-donate {
+  margin: 0 30px;
+  border-radius: 20px;
+  background: #fff;
+  &__title {
+    text-align: center;
+    font-size: 34px;
+    line-height:90px;
+  }
+  // &__list {
+  
+  // }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    .left {
+      font-size: 26px;
+      color: #999;
+      .left-value {
+        color: $yellow-color;
+      }
+      .qcfont {
+        color: inherit;
+        font-size: inherit;
+      }
+    }
+    .btn {
+      padding: 0 56px;
+      line-height: 70px;
+      font-size: 32px;
+      color: #fff;
+      background: rgb(255, 79, 3);
+      border-radius: 35px;
+    }
+  }
+}

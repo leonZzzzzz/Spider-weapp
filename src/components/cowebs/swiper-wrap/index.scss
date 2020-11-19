@@ -1,0 +1,10 @@
+
+.swiper-data {
+  width: 100%;
+  height: 400px;
+  .item {
+    width: 100%;
+    overflow: hidden;
+    @include img();
+  }
+}

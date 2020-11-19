@@ -1,0 +1,226 @@
+.page-order-detail {
+  font-size: $page-font-size;
+  padding-bottom: 100px;
+  .m-r-2 {
+    margin-right: 20px;
+  }
+  .order-state {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    margin-bottom: 20px;
+    background: #fff;
+    .content {
+      font-size: 32px;
+      .time {
+        margin-top: 20px;
+        font-size: 26px;
+      }
+    }
+    .state-img {
+      width: (390px * 0.7);
+      height: (279px * 0.7);
+      .img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .address-info {
+    display: flex;
+    align-items: center;
+    padding: $base-spacing;
+    background: #fff;
+    .icon-address {
+      margin-right: $base-spacing;
+      font-size: 40px;
+    }
+    .info-wrapper {
+      flex: 1;
+      .address {
+        margin-top: 20px;
+        color: $grey-text;
+        word-break: break-all;
+      }
+    }
+  }
+  .cell-item {
+    background: #fff;
+    align-items: flex-start;
+    padding: $base-spacing;
+  }
+  .order-item-list {
+    background: #fff;
+    padding: 0 $base-spacing;
+    // &.accordion {
+    //   padding: 0;
+    //   .order-item {
+    //     padding: $base-spacing 0 0 0;
+    //   }
+    // }
+    .order-item {
+      display: flex;
+      padding: $base-spacing 0;
+      border-bottom: 1px solid $divider-line-color;
+      &:last-child {
+        border-bottom: none;
+      }
+      .cover {
+        width: 160px;
+        height: 160px;
+        margin-right: $base-spacing;
+        .img {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+        }
+      }
+      .info {
+        flex: 1;
+        &__name {
+          word-break: break-all;
+        }
+        &__specs {
+          margin-top: 25px;
+          font-size: $desc-font-size;
+          color: $grey-text;
+        }
+        &__price {
+          margin-top: 25px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          .price {
+            color: #222;
+          }
+          .qty {
+            color: $grey-text;
+          }
+        }
+      }
+    }
+    .statistics {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 0;
+      text-align: right;
+      font-size: 26px;
+      .qty {
+        margin-right: 20px;
+        color: $grey-text;
+      }
+      .amount {
+        color: #222;
+        font-weight: bold;
+      }
+    }
+    .other-info {
+      text-align: right;
+      padding-bottom: 20px;
+      font-size: 26px;
+      color: $grey-text;
+    }
+  }
+  .info-list {
+    padding: $base-spacing;
+    background: #fff;
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      margin-top: $base-spacing;
+      font-size: 26px;
+      color: $grey-text;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .copy-btn {
+      color: $mall-primary-color;
+    }
+  }
+
+  .order-info {
+    background: #fff;
+    padding: $base-spacing;
+    .title {
+      padding-bottom: $base-spacing;
+      border-bottom: 1px solid $divider-line-color;
+    }
+    .info-list {
+      padding: $base-spacing 0;
+    }
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      margin-top: $base-spacing;
+      font-size: 26px;
+      color: $grey-text;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .copy-btn {
+      color: $mall-primary-color;
+    }
+  }
+
+  // 调整taro-ui默认样式
+  .at-accordion.order-accordion {
+    background: #fff;
+    .at-accordion__header {
+      // padding: $base-spacing 0;
+      font-size: $page-font-size;
+      // &::after {
+      //   border: none;
+      // }
+    }
+    .at-accordion__content {
+      &::after {
+        border-color: $divider-line-color;
+      }
+    }
+  }
+
+  .bottom-wrapper {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: $bottom-wrapper-zIndex;
+    background: #fff;
+    border-top: 1px solid $divider-line-color;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+    .action-btn {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 170px;
+      height: 60px;
+      text-align: center;
+      border-radius: 5px;
+      border: 1px solid #5e5e5e;
+      color: #5e5e5e;
+      padding: 0 20px;
+      &.primary {
+        color: #fff;
+        background: $mall-primary-color;
+        border: 1px solid $mall-primary-color;
+      }
+      &.no-border {
+        border: none;
+        color: $mall-primary-color;
+      }
+    }
+    .action-btn + .action-btn {
+      margin-left: 20px;
+    }
+  }
+}

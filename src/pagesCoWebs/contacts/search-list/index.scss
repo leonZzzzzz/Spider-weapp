@@ -1,0 +1,31 @@
+page {
+  background: #fff;
+  min-height: 100%;
+}
+
+.search-list {
+  .top-wrap {
+    @include bottom-line();
+    background: #fff;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    color: $color-grey;
+    .red {
+      color: var(--color-primary);
+      flex-shrink: 0;
+      margin-left: 30px;
+    }
+  }
+  .list {
+    background: #fff;
+  }
+}

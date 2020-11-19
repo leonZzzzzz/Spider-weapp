@@ -1,0 +1,131 @@
+page{
+  color:#f6e9cd;
+}
+
+.rule-model{
+  width:100%;
+  height:100%;
+  top:0px;
+  position: fixed;
+  z-index:88;
+  .track{
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity: 0.6;
+  }
+  .rule-content{
+    position: absolute;
+    width:600px;
+    min-height:670px;
+    left:75px;
+    top:250px;
+    image{
+      width: 600px;
+      height: 670px;
+    }
+    .punchsuccess{
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      color:rgb(255,54,0);
+    }
+    .one{
+        top: 260px;
+      }
+      .two{
+        top: 320px;
+      }
+      .four{
+        top:490px;
+        color:#f6e9cd;
+        font-size:28px;
+      }
+      .three{
+        top: 570px;
+        text{
+          background:#f6e9cd;
+          border-radius: 40px;
+          padding:20px 60px;
+        }
+      }
+  }
+  .close_model{
+    z-index: 88rpx;
+position: absolute;
+bottom: 335px;
+width: 100%;
+text-align: center;
+font-size: 60px;
+color: #fff;
+  }
+}
+.punch{
+  // width:100%;
+  background:#f6e9cd;
+  display:flex;
+  justify-content: space-between;
+  padding:20px;
+  padding-bottom:100px;
+  .avatar{
+    width:90px;height:90px;
+    border-radius: 50%;
+  }
+  .punch-day{
+    display:flex;
+    flex-direction: column;
+    view{
+      width:400px;
+      font-size:30px;
+      color:#000;
+      font-weight:bold;
+      text{
+        color:#e67c1a;
+      }
+    }
+    text{
+      color:#999;
+      font-size:26px;
+      margin-top:10px;
+    }
+  }
+  .icon{
+    border: 1px solid #e67c1a;
+border-radius: 20px;
+height: 60px;
+padding: 0 20px;
+margin-top: 15px;
+    image{
+      width:40px;height:40px;
+      margin-top:10px;
+    }
+    text{
+      color:#000;
+      margin-left:20px;
+      line-height: 60px;
+    }
+  }
+}
+.floating{
+  position: absolute;
+  top:150px;
+  background:#fff;
+  left:20px;
+  width:670px;
+  border-radius: 20px;
+  display:flex;
+  justify-content: space-between;
+  padding:30px 20px;
+  view{
+    color:#000;
+    line-height:80px;
+    font-weight: bold;
+  }
+  text{
+    color:#fff;
+    background:#e67c1a;
+    padding:20px 60px;
+    border-radius: 40px;
+
+  }
+}

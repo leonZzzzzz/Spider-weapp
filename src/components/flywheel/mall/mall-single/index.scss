@@ -1,0 +1,80 @@
+.qc-mall-single {
+  margin: 30px;
+  overflow: hidden;
+  background: #fff;
+  &--top-radio {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  &--bottom-radio {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  &__banner {
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+  }
+  .sold-out {
+    box-sizing: border-box;
+    @include absolute-center;
+    @include flex-center;
+    background: rgba(211, 165, 165, 0.75);
+    color: #fff;
+    width: (260px/1.5);
+    height: (260px/1.5);
+    border-radius: 50%;
+    &-text {
+      box-sizing: border-box;
+      @include flex-center;
+      border: 2px dashed #fff;
+      text-align: center;
+      width: ((260px/1.5)-20);
+      height: ((260px/1.5)-20);
+      border-radius: 50%;
+    }
+  }
+  &__product {
+    padding: 20px;
+    &-name {
+      font-size: 30px;
+      line-height: 44px;
+      color: #848484;
+    }
+    &-other {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-price {
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: flex-end;
+    }
+    &-now {
+      margin-right: 10px;
+      font-size: 44px;
+      font-weight: 500;
+      color: #ea3d24;
+      display: inline-block;
+      &::first-letter {
+        font-size: 24px;
+      }
+    }
+    &-orig {
+      font-size: 24px;
+      color: #848484;
+      text-decoration: line-through;
+    }
+    &-button {
+      background: #ea3d24;
+      color: #fff;
+      border-radius: 50px;
+      font-size: 28px;
+      padding: 14px 40px;
+      &--none {
+        background: #848484;
+      }
+    }
+  }
+}

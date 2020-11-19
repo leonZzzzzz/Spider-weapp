@@ -1,0 +1,81 @@
+page {
+  min-height: 100%;
+  background: #f2f2f2;
+}
+
+.tag-edit{
+  .tag{
+    display: inline-block;
+    font-size: 28px;
+    padding: 0px 18px;
+    margin: 0 16px 10px 0;
+    height: 61px;
+    line-height: 60px;
+    border-radius: 8px;
+    color: #4E5058;
+    background: #F2F2F2;
+    @include text-ellipsis();
+  }
+
+
+  .my-tag{
+    padding: 35px 30px;
+    background: #fff;
+    .label-title{
+      color: #222;
+      font-size: 32px;
+      // font-weight: bold;
+    }
+    .my-tags{
+      margin-top: 49px;
+    }
+  }
+
+  .stystem-tag{
+    margin-top: 20px;
+    padding: 35px 0;
+    background: #fff;
+    .label-title{
+      color: #222;
+      font-size: 32px;
+      padding: 0 30px;
+      .label-title-tips{
+        color: #888;
+        font-size: 26px;
+        padding-left: 15px;
+        vertical-align: bottom;
+      }
+    }
+    .search-bar{
+      margin: 0 10px;
+      margin-top: 30px;
+      &::after{
+        display: none;
+      }
+    }
+    .stystem-tags{
+      margin-top: 40px;
+      padding: 0 30px;
+    }
+  }
+
+  .save-btn-bar{
+    height: 200px;
+  }
+
+  .save-btn {
+    position: fixed;
+    bottom: 0;
+    padding: 20px 30px;
+    left: 20px;
+    right: 20px;
+    z-index: 2;
+    height: 200px;
+    box-sizing: border-box;
+    button {
+      background: $color-primary;
+      color: #fff;
+      font-size: 30px;
+    }
+  }
+}

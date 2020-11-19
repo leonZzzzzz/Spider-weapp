@@ -1,0 +1,54 @@
+.swiper-box {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 260px;
+  padding-bottom: 20px;
+  background: #fff;
+  .bg-box {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: #8e92d9;
+  }
+  .swiper-image {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    height: 100%;
+    z-index: 2;
+    .image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+}
+.list {
+  background: $page-background-color;
+}
+.release-btn {
+  z-index: 1;
+  // height: 120px;
+  // background: rgb(248, 248, 248);
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .qcfont {
+    font-size: 80px;
+    color: var(--color-primary);
+    line-height: 88px;
+    padding: 0;
+    border-radius: 50%;
+  }
+}

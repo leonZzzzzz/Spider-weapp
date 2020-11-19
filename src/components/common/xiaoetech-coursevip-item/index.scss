@@ -1,0 +1,41 @@
+.qc-course-vip-group_item {
+  padding: 30px;
+  display: flex;
+  background-color: #fff;
+  .cover {
+    margin-right: 30px;
+    // width: 280px;
+    // height: 180px;
+    width: 210px;
+    height: 160px;
+    flex-shrink: 0;
+    @include img();
+  }
+  .content-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      line-height: 1.4;
+      @include ellipsis-line();
+      // height: 86px;
+      font-size: 32px;
+    }
+    .desc {
+      font-size: 28px;
+      display: flex;
+      justify-content: space-between;
+      color: #888;
+      .price {
+        font-size: 32px;
+        flex-shrink: 0;
+        color: $price-color;
+        // @include price-with-small-symbol(32px, $price-color, 3px, 15px, bold);
+      }
+    }
+  }
+}
+.top-line {
+  @include top-line(30px);
+}

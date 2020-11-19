@@ -1,0 +1,9 @@
+dist/
+deploy_versions/
+node_modules/
+.temp/
+.rn_temp/
+.DS_Store
+
+yarn.lock
+build-result.txt

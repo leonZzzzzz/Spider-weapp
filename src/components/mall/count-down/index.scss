@@ -1,0 +1,58 @@
+
+.box {
+  display: inline-block;
+  .time {
+    background: $price-color;
+    width: 44px;
+    height: 44px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 44px;
+  }
+  .dot {
+    padding: 0 10px;
+    color: $price-color;
+    font-weight: bold;
+  }
+}
+
+.white {
+  .time {
+    background: #fff;
+    color: $price-color;
+  }
+  .dot {
+    color: #fff;
+    // font-weight: bold;
+  }
+}
+.orange {
+  // display: inline-block;
+  .time {
+    background: #eb4c28;
+    color: #fff;
+  }
+  .dot {
+    color: rgb(235, 76, 40);
+    // font-weight: bold;
+  }
+}
+.text {
+  display: inline-block;
+  .dot {
+    padding: 0 2px;
+  }
+}
+.red-text {
+  display: inline-block;
+  .time {
+    background: #d10d23;
+    color: #fff;
+  }
+  .dot {
+    color: #d10d23;
+    // font-weight: bold;
+  }
+}

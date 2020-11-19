@@ -1,0 +1,20 @@
+.qc-menu-card {
+  background: #fff;
+  margin: 30px;
+  border-radius: 15px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  &__more {
+    color: #666;
+    font-size: 28px;
+  }
+  &__icon {
+    margin-left: 10px;
+    font-size: 26px;
+  }
+}

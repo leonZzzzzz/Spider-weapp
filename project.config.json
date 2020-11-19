@@ -1,0 +1,204 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "CoWeb-test",
+	"description": "雅典娜项目 移动端功能",
+	"appid": "wxaacb305cb7c84593",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"checkSiteMap": false,
+	"compileType": "miniprogram",
+	"miniprogram": {
+		"current": 0,
+		"list": [
+			{
+				"id": -1,
+				"name": "订单",
+				"pathName": "pagesMall/order/list/index",
+				"scene": null
+			}
+		]
+	},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pagesMall/product/detail/index",
+					"pathName": "pagesMall/product/detail/index",
+					"query": "id=aa3c2f3e6ce940a3a7cda8ca3d6e0926&__key_=15790685941742",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/activity/index",
+					"pathName": "pages/activity/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cart/index",
+					"pathName": "pages/cart/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesMall/order/list/index",
+					"pathName": "pagesMall/order/list/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesCommon/address/edit/index",
+					"pathName": "pagesCommon/address/edit/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesCommon/address/list/index",
+					"pathName": "pagesCommon/address/list/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesMall/after-sales-order/index",
+					"pathName": "pagesMall/after-sales-order/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesMall/group-product-order/index",
+					"pathName": "pagesMall/group-product-order/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesMall/after-sale/express-bill/index",
+					"pathName": "pagesMall/after-sale/express-bill/index",
+					"query": "afterSaleId=26eea0e176534219a84cc806dd7ab55e&__key_=15791655986102",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesCoWebs/news/detail/index",
+					"pathName": "pagesCoWebs/news/detail/index",
+					"query": "id=f926160bda9d413794c76a18b36b58a5",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesCoWebs/news/detail/index",
+					"pathName": "pagesCoWebs/news/detail/index",
+					"query": "id=f926160bda9d413794c76a18b36b58a5",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesCoWebs/news/detail/index",
+					"pathName": "pagesCoWebs/news/detail/index",
+					"query": "id=b73fe84cac654cc6b0ec83d95fddad78",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesCoWebs/news/detail/index",
+					"pathName": "pagesCoWebs/news/detail/index",
+					"query": "id=b59c16b7887645be99c900366ae45713",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "pagesPromotion/distributer/index/index",
+					"pathName": "pagesPromotion/distributer/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/course/index",
+					"pathName": "pages/course/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesCoWebs/course/detail/index",
+					"pathName": "pagesCoWebs/course/detail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "pagesCoWebs/activity/check/mobile/index",
+					"pathName": "pagesCoWebs/activity/check/mobile/index",
+					"query": "scene=43983ee625b84c8eab58a3848eb17f1e",
+					"scene": null
+				},
+				{
+					"id": 17,
+					"name": "pagesXiaoetech/course-vip/success/index",
+					"pathName": "pagesXiaoetech/course-vip/success/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "pagesCoWebs/activity/check/code/index",
+					"pathName": "pagesCoWebs/activity/check/code/index",
+					"query": "scene=43983ee625b84c8eab58a3848eb17f1e",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pagesCommon/channelTransfer/index",
+					"pathName": "pagesCommon/channelTransfer/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

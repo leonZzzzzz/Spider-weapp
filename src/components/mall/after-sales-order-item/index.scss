@@ -1,0 +1,134 @@
+.order-list__item {
+  padding: 0 30px;
+  background: #fff;
+  margin-bottom: 20px;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px solid $divider-line-color;
+    font-size: 30px;
+    .num {
+      flex: 1;
+      margin-right: 10px;
+      word-break: break-all;
+    }
+  }
+  .product-list {
+    padding: 20px 0 0;
+    .product-info + .product-info {
+      margin-top: 20px;
+    }
+    .product-info {
+      display: flex;
+      .cover {
+        width: 160px;
+        height: 160px;
+        margin-right: 30px;
+        .img {
+          width: 100%;
+          height: 100%; // border-radius: 10px;
+        }
+      }
+      .info {
+        flex: 1;
+        &__name {
+          word-break: break-all;
+          line-height: 40px;
+        }
+        &__specs {
+          margin-top: 25px;
+          font-size: $desc-font-size;
+          color: $grey-text;
+        }
+        &__price {
+          margin-top: 25px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          .price {
+            color: #222;
+          }
+          .qty {
+            color: $grey-text;
+          }
+        }
+      }
+    }
+  }
+  .statistics {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    text-align: right;
+    font-size: 26px;
+    .qty {
+      margin-right: 20px;
+      color: $grey-text;
+    }
+    .amount {
+      color: #222;
+      font-weight: bold;
+    }
+  }
+  .status-info {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    text-align: right;
+    font-size: 26px;
+    color: $mall-primary-color;
+    .text {
+      margin-left: 10px;
+    }
+  }
+  .other-info {
+    text-align: right;
+    padding-bottom: 20px;
+    font-size: 26px;
+    color: $grey-text;
+  }
+  .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid $divider-line-color;
+    font-size: 26px;
+    .icon-wrapper {
+      @include reset-btn-style();
+      background: transparent;
+      font-size: 26px;
+      color: $grey-text;
+      margin-right: 20px;
+    }
+    .btn-wrapper {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      white-space: nowrap;
+      overflow-x: auto;
+      .action-btn {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center; // min-width: 170px;
+        height: 60px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #5e5e5e;
+        color: #5e5e5e;
+        padding: 0 20px;
+        &.primary {
+          color: #fff;
+          background: $mall-primary-color;
+          border: 1px solid $mall-primary-color;
+        }
+      }
+      .action-btn + .action-btn {
+        margin-left: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.input-wrap {
+  // margin-top: 50px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    @include bottom-line(30px);
+    .title {
+      width: 180px;
+      flex-shrink: 0;
+      .red {
+        color: red;
+        margin-left: 10px;
+      }
+    }
+    input,
+    textarea {
+      width: 100%;
+      color: #4d4d4d;
+    }
+    textarea {
+      height: 130px;
+      overflow: hidden;
+    }
+    .disabled {
+      color: $color-grey;
+    }
+    .picker {
+      width: 100%;
+      .text {
+        display: flex;
+        justify-content: space-between;
+        color: $color-grey;
+        align-items: center;
+      }
+    }
+  }
+  .vip-text {
+    background: $page-background-color;
+    padding: 30px;
+    color: $price-color;
+  }
+}
+.submit-btn {
+  margin: 100px 30px 30px;
+  button {
+    background: var(--color-primary);
+    color: #fff;
+  }
+}

@@ -1,0 +1,26 @@
+
+.broadcast-wrap {
+  z-index: 5;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  padding: 8px 20px 8px 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  font-size: 24px;
+  color: #fff;
+  .content {
+    margin-left: 10px;
+  }
+  .iconfont {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
+
+.hide {
+  display: none;
+}

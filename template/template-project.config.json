@@ -1,0 +1,25 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "athena-mobile",
+  "description": "${projectName}",
+  "appid": "${wechatAppId}",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "checkSiteMap": false,
+  "compileType": "miniprogram",
+  "miniprogram": {
+    "current": 0,
+    "list": [
+      {
+        "id": -1,
+        "name": "订单",
+        "pathName": "pagesMall/order/list/index",
+        "scene": null
+      }
+    ]
+  }
+}

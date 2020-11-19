@@ -1,0 +1,30 @@
+.qc-customer-service {
+  position: fixed;
+  bottom: 70px;
+  right: 60px;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  background: rgba(27, 27, 27, 0.4);
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.kefu-dialog {
+  .kefu-btn {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+    &:first-child {
+      margin-bottom: 30px;
+    }
+    button {
+      background: var(--color-primary);
+      color: #fff;
+      font-size: 32px;
+      line-height: 3;
+      border-radius: 0;
+    }
+  }
+}

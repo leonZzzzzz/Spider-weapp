@@ -1,0 +1,158 @@
+// @import './styles/index.scss';
+@import './font/iconfont.scss';
+
+@import '~taro-ui/dist/style/components/icon.scss';
+@import '~taro-ui/dist/style/components/rate.scss';
+@import '~taro-ui/dist/style/components/input-number.scss';
+@import '~taro-ui/dist/style/components/textarea.scss';
+@import '~taro-ui/dist/style/components/accordion.scss';
+@import '~taro-ui/dist/style/components/search-bar.scss';
+// @import '~taro-ui/dist/style/components/button.scss';
+// @import '~taro-ui/dist/style/components/checkbox.scss';
+// @import '~taro-ui/dist/style/components/radio.scss';
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.qcfont {
+  font-size: 28px;
+}
+img,
+image {
+  vertical-align: top;
+}
+
+page {
+  background: rgb(246, 246, 246);
+  // background: $page-background-color;
+}
+button {
+  &::after {
+    content: '';
+    border: none;
+  }
+}
+
+.tags {
+  // display: flex;
+  // flex-wrap: wrap;
+  .tag {
+    background: $color-primary--2;
+    color: $color-primary;
+    font-size: 22px;
+    border-radius: 6px;
+    // padding: 6px 12px;
+    // line-height: 1;
+    padding: 0 12px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    display: inline-block;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  .tag-android {
+    line-height: 38px;
+  }
+}
+.at-search-bar {
+  background-color: rgba(0, 0, 0, 0);
+}
+.qc-search-bar {
+  .search-bar {
+    width: 750px;
+    padding: 20px 30px;
+    &::after {
+      border-bottom-width: 0;
+    }
+    .at-search-bar__input-cnt {
+      border-radius: 10px;
+      background: $search-input-box-color;
+      height: 60px;
+      .at-search-bar__clear {
+        font-size: 40px;
+      }
+    }
+  }
+  .search-bar-level {
+    width: 590px;
+  }
+}
+
+.box-shadow {
+  @include box-shadow();
+}
+
+.hover-button {
+  opacity: 0.7 !important;
+}
+
+.hover-white-color {
+  background: $white-hover-color !important;
+}
+
+.relative {
+  position: relative;
+  z-index: 1;
+}
+
+.bottom-wrap {
+  @include top-line(30px);
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left-wrap {
+    flex-shrink: 0;
+  }
+  .btn-wrap {
+    display: flex;
+    // justify-content: flex-end;
+    // flex-wrap: wrap;
+    .b-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 60px;
+      line-height: 1;
+      // text-align: center;
+      font-size: 28px;
+      margin: 0 0 0 10px;
+      box-sizing: border-box;
+      // background: $red-color;
+      color: #fff;
+      border-radius: 4px;
+      border: 1px solid rgb(94, 94, 94);
+      color: rgb(94, 94, 94);
+      padding: 0;
+    }
+    .primary {
+      background: $red-color;
+      color: #fff;
+      border: 0;
+    }
+  }
+}
+
+.item-status-text {
+  background: linear-gradient(to right, rgb(210, 210, 210), #c3c3c3);
+  margin-right: 20px;
+  padding: 4px 14px;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  font-size: 26px;
+  &.not-start {
+    background: linear-gradient(to right, rgb(243, 163, 70), rgb(239, 128, 56));
+  }
+  &.start {
+    background: linear-gradient(to right, rgb(227, 97, 53), rgb(208, 67, 68));
+  }
+}

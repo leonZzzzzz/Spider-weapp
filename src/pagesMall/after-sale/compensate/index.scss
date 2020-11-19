@@ -1,0 +1,111 @@
+.page-apply-after-compensate {
+  font-size: $page-font-size;
+  padding-bottom: 100px;
+  .cell-item {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 $base-spacing;
+    height: 100px;
+    background: #fff;
+    .title {
+      margin-right: $base-spacing;
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      .price {
+        text-align: right;
+        font-size: 28px;
+        color: $mall-primary-color;
+        font-weight: bold;
+        flex: 1;
+      }
+      .price-input {
+        width: 100%;
+      }
+      &.right {
+        text-align: right;
+      }
+    }
+  }
+  .picker {
+    width: 100%;
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+  .icon-arrow-right {
+    color: $grey-text;
+    padding: 0 10px;
+    &.rotate {
+      transform: rotate(90deg);
+    }
+  }
+  .action-item {
+    margin-top: 20px;
+    padding: 0 $base-spacing;
+    background: #fff;
+    .title {
+      padding: $base-spacing 0;
+      border-bottom: 1px solid $divider-line-color;
+    }
+    .textarea-wrapper {
+      padding: $base-spacing 0;
+    }
+    .img-list {
+      display: flex;
+      padding: 30px 0;
+      &__item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #f9f9f9;
+        color: #c3c3c3;
+        width: 180px;
+        height: 180px;
+        border: 1px dashed #c3c3c3;
+        .img-item {
+          width: 100%;
+          height: 100%;
+        }
+        .qc-icon-guanbi {
+          position: absolute;
+          top: 0;
+          right: 0;
+          // transform: translate(50%, -50%);
+          color: #c3c3c3;
+        }
+        .qc-icon-haibao {
+          font-size: 40px;
+        }
+        .icon-tupian1 {
+          color: #999;
+        }
+        .desc {
+          font-size: $desc-font-size;
+        }
+      }
+      .img-list__item + .img-list__item {
+        margin-left: 30px;
+      }
+    }
+  }
+  .btn-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $bottom-wrapper-zIndex;
+    .primary-btn {
+      background-color: var(--color-primary);
+      border-radius: 0;
+      color: #fff;
+    }
+  }
+}

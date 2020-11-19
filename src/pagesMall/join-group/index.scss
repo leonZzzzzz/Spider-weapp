@@ -1,0 +1,217 @@
+.page {
+  position: relative;
+  background: $page-background-color;
+  .red {
+    background: var(--color-primary);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    z-index: 0;
+  }
+
+  .time-wrap {
+    .divider-wrap {
+      padding: 0 30px;
+      display: flex;
+      align-items: center;
+      .text {
+        flex-shrink: 0;
+        padding: 0 30px;
+        color: $price-color;
+      }
+      .line {
+        width: 100%;
+        height: 1px;
+        background: $price-color;
+      }
+      .left {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: '';
+          border-radius: 50%;
+          width: 10px;
+          height: 10px;
+          border: 1px solid $price-color;
+          right: -10px;
+          top: -5px;
+          background-color: $price-color;
+        }
+      }
+      .right {
+        position: relative;
+        &::after {
+          position: absolute;
+          content: '';
+          border-radius: 50%;
+          width: 10px;
+          height: 10px;
+          border: 1px solid $price-color;
+          left: -10px;
+          top: -5px;
+          background-color: $price-color;
+        }
+      }
+    }
+    .count-down {
+      text-align: center;
+      padding: 30px 0;
+    }
+    .num-wrap {
+      text-align: center;
+      padding: 0 30px;
+      text {
+        color: $price-color;
+      }
+    }
+    .success-state {
+      text-align: center;
+      font-size: 34px;
+      padding: 30px 0;
+      // font-weight: bold;
+    }
+    .fail-state {
+      text-align: center;
+      font-size: 34px;
+      padding: 30px 0;
+      // font-weight: bold;
+      text {
+        color: $price-color;
+      }
+    }
+    .chengtuan-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 30px 0;
+      justify-content: center;
+      .item {
+        margin: 20px;
+        position: relative;
+        .top {
+          position: absolute;
+          top: -20px;
+          right: -30px;
+          background: $price-color;
+          border: 2px solid #fff;
+          padding: 0 15px;
+          line-height: 1.5;
+          font-size: 22px;
+          border-radius: 20px;
+          color: #fff;
+        }
+        .head {
+          background: rgb(221, 221, 221);
+          width: 100px;
+          height: 100px;
+          overflow: hidden;
+          border-radius: 50%;
+          line-height: 0;
+          image {
+            width: 100%;
+          }
+        }
+        .name {
+          width: 90px;
+          text-align: center;
+          @include text-ellipsis();
+          margin-top: 10px;
+          font-size: 28px;
+        }
+      }
+      .not {
+        .head {
+          line-height: 100px;
+          text-align: center;
+          .iconfont {
+            font-size: 44px;
+          }
+        }
+        .name {
+          color: $color-grey;
+        }
+      }
+    }
+    .join-wrap {
+      padding: 0 60px 60px 60px;
+      .text {
+        text-align: center;
+        color: $color-grey;
+        margin-bottom: 20px;
+      }
+      button {
+        background: $red-color;
+        color: #fff;
+      }
+      .check {
+        background: $red-color;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .back {
+        border: 1px solid $red-color;
+        color: $red-color;
+        box-sizing: border-box;
+      }
+    }
+    .success-btn {
+      padding: 0 60px 60px 60px;
+      .check {
+        background: $red-color;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+      .back {
+        border: 1px solid $red-color;
+        color: $red-color;
+        box-sizing: border-box;
+      }
+    }
+    .button-wrap {
+      padding: 0 60px 60px 60px;
+      .text {
+        text-align: center;
+        color: $color-grey;
+        margin-bottom: 20px;
+      }
+      .border {
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+        background: transparent;
+      }
+      .primary {
+        background: var(--color-primary);
+        color: #fff;
+        border: 0;
+      }
+      button {
+        &:not(:first-child) {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .tip-wrap {
+    margin: 30px 0;
+    .title-wrap {
+      padding: 30px 0;
+      text-align: center;
+      .iconfont {
+        margin: 0 10px;
+      }
+      .dot {
+        width: 30px;
+        padding: 0 20px;
+      }
+    }
+    .content {
+      background: #fff;
+      margin: 0 30px;
+      padding: 10px 30px;
+      line-height: 2;
+      color: $color-grey;
+      border-radius: 10px;
+      border: 1px solid $color-border;
+    }
+  }
+}

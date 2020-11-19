@@ -1,0 +1,217 @@
+// @import '../../styles/index.scss';
+
+.card {
+  position: absolute;
+  width: 100%;
+  .relative {
+    padding-top: 20px;
+  }
+  .bg-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: var(--color-primary);
+  }
+  .card-wrap {
+    position: relative;
+    margin: 30px;
+    margin-top: 0;
+    background: #fff;
+    padding: 30px 30px 10px 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    .info-wrap {
+      display: flex;
+      align-items: center;
+      .info {
+        width: 100%;
+        margin-left: 30px;
+        .name {
+          display: flex;
+          justify-content: space-between;
+          font-size: 36px;
+          .name-text {
+            .qcfont {
+              font-size: 34px;
+              color: rgb(221, 193, 52);
+              margin-left: 10px;
+            }
+          }
+          .edit {
+            background: var(--color-primary);
+            color: #fff;
+            opacity: 0.4;
+            font-size: 24px;
+            padding: 0 30px;
+            line-height: 40px;
+            height: 40px;
+            border-radius: 30px;
+            .renzheng {
+              margin-right: 10px;
+            }
+          }
+        }
+        .desc {
+          font-size: 28px;
+          color: $color-grey;
+          line-height: 1.5;
+        }
+       
+      }
+    }
+    .tags {
+      margin: 30px 0 10px 0;
+      display: flex;
+      flex-wrap: wrap;
+      .tag {
+        background: rgb(226, 227, 255);
+        font-size: 24px;
+        border-radius: 8px;
+        padding: 0px 16px;
+        margin: 0 16px 16px 0;
+        @include text-ellipsis();
+      }
+    }
+    .cells {
+      @include top-line();
+      padding-top: 20px;
+      color: rgb(97, 97, 97);
+      font-size: 30px;
+      .cell {
+        padding: 10px 0;
+        .qcfont {
+          margin-right: 10px;
+          color: var(--color-primary);
+        }
+      }
+    }
+    .intro {
+      font-size: 28px;
+      color: $color-grey;
+      padding: 20px 0;
+    }
+    .icon-tags {
+      @include top-line(30px, 30px);
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .group-wrap {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px;
+    .title {
+      padding: 30px;
+      font-size: 40px;
+      text {
+        position: relative;
+        z-index: 1;
+        &::before {
+          position: absolute;
+          content: '';
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 20px;
+          background-color: #ffe7d8;
+          z-index: -1;
+        }
+      }
+    }
+    .content {
+      @include top-line();
+      padding: 30px;
+    }
+  }
+  .btn-wrap {
+    padding: 30px 20px;
+    display: flex;
+    button {
+      padding: 0;
+      margin: 0;
+      flex: 1;
+      font-size: 28px;
+      border-radius: 10px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 2.2;
+      color: #fff;
+      background-color: var(--color-primary);
+      &:last-child {
+        background-color: #ff6000;
+        margin-left: 30px;
+      }
+      .qcfont {
+        margin-right: 20px;
+        font-size: 40px;
+      }
+    }
+
+    // .border {
+    //   border: 1px solid var(--color-primary);
+    //   color: var(--color-primary);
+    //   margin-right: 10px;
+    // }
+    // .primary {
+    //   background: var(--color-primary);
+    //   color: #fff;
+    // }
+  }
+  .visit-wrap {
+    padding: 0 60px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .num-box {
+      .head {
+        display: flex;
+        align-items: center;
+        color: $color-grey;
+      }
+      .num {
+        color: $color-grey;
+        font-size: 24px;
+        margin-top: 10px;
+      }
+    }
+    .like-box {
+      color: $color-grey;
+      font-size: 24px;
+      .qcfont {
+        font-size: 46px;
+      }
+      .num {
+        margin-top: 10px;
+      }
+    }
+  }
+  .company-wrap {
+    margin: 50px 0;
+    .title {
+      padding: 0 30px 30px;
+    }
+  }
+}
+ .pink{
+    margin-bottom:105px;
+    width: 200px;
+font-size: 28rpx;
+    // .star{
+    //   font-size:40px !important;
+    // }
+  }
+  .default-head{
+  width: 150px;
+height: 150px;
+text-align: center;
+line-height: 150px;
+border-radius: 50%;
+background: #dadada;
+color: #fff;
+font-size: 100px;
+}

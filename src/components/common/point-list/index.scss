@@ -1,0 +1,33 @@
+.lists{
+    display:flex;
+    flex-direction: column;
+    // .nobor{
+    //   border-radius: unset !important;
+    // }
+    .list-row,.nobor{
+      background:#fff;
+      border-radius: 10px;
+      font-size:28px;
+      display:flex;
+      justify-content: space-between;
+      padding:20px;
+      line-height: 60px;
+      .row{
+        text:nth-child(1){
+          color:#999;
+        }
+        image{
+          width:70px;height:70px;
+          border-radius: 50%;
+          margin:0 15px;
+        }
+      }
+      
+    }
+  }
+ 
+    
+    .bor-bot{
+      border-bottom:2px solid #eee;
+    }
+  

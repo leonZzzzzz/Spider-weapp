@@ -1,0 +1,49 @@
+.title-wrap-components {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  box-sizing: border-box;
+  .title-wrap {
+    padding: 0 30px;
+    font-weight: bold;
+    font-size: 34px;
+    display: inline-flex;
+    align-items: center;
+    .line {
+      height: 32px;
+      width: 10px;
+      background: $price-color;
+      border-radius: 10px;
+      margin-right: 15px;
+      display: inline-block;
+    }
+  }
+  .title {
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    font-size: 34px;
+    &::after {
+      position: absolute;
+      content: '';
+      background: rgb(255, 244, 222);
+      top: 20px;
+      bottom: 0;
+      left: 0;
+      right: -10px;
+      z-index: -1;
+    }
+  }
+  
+  .desc {
+    color: $color-grey;
+    font-size: 28px;
+    padding: 0 30px;
+    line-height: 100px;
+  }
+  .desc__hover {
+    background: $white-hover-color;
+  }
+}

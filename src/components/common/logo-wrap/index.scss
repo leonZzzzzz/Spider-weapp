@@ -1,0 +1,35 @@
+.logo-wrap {
+  text-align: center;
+  // background: $page-background-color;
+  height: 90px;
+  line-height: 90px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // z-index: -1;
+  color: $color-grey;
+  .img {
+    margin: 0 auto;
+    width: 280px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    @include img();
+    // background: $page-background-color;
+    background: transparent;
+  }
+}
+.logo-wrap-fixed {
+  position: fixed;
+  z-index: -10;
+}
+.click-box {
+  height: 90px;
+  margin: 0 auto;
+  width: 300px;
+}
+// .logo-height {
+//   position: relative;
+//   z-index: -2;
+// }

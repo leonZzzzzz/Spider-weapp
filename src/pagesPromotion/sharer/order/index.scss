@@ -1,0 +1,24 @@
+.order {
+  .type-container {
+    padding: 30px;
+    background-color: $page-background-color;
+    .type-wrap {
+      display: flex;
+      // margin: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+      .type-item {
+        flex: 1;
+        height: 90px;
+        line-height: 90px;
+        background-color: #fff;
+        text-align: center;
+        color: $color-grey;
+        font-size: 30px;
+        &.active {
+          color: $price-color;
+        }
+      }
+    }
+  }
+}

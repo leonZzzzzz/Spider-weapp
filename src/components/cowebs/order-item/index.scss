@@ -1,0 +1,26 @@
+.order-item-box {
+  // padding: 30px;
+  padding: 0 30px 30px;
+  .order-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 30px;
+    .time-price {
+      font-size: 28px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .time {
+        color: $color-grey;
+      }
+      .price {
+        color: $price-color;
+      }
+    }
+  }
+}
+.p-t {
+  padding-top: 30px;
+}

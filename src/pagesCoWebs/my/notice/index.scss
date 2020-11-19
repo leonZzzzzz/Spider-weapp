@@ -1,0 +1,20 @@
+
+.group-items {
+  display: flex;
+  background: #fff;
+  .item {
+    flex: 1;
+    text-align: center;
+    padding: 60px;
+    font-size: 32px;
+    .qcfont {
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      color: #fff;
+      font-size: 60px;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+    }
+  }
+}

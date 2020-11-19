@@ -1,0 +1,306 @@
+
+$dot-width: 36px;
+.page-after-sale-detail {
+  font-size: $page-font-size;
+  padding-bottom: 100px;
+  .status-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px $base-spacing;
+    .status {
+      display: flex;
+      align-items: center;
+      &-img {
+        width: 60px;
+        height: 60px;
+      }
+      &-text {
+        margin: 0 30px;
+        flex: 1;
+      }
+    }
+    .action-btn {
+      box-sizing: border-box;
+      @include flex-center;
+      min-width: 170px;
+      height: 60px;
+      text-align: center;
+      border-radius: 5px;
+      border: 1px solid #5e5e5e;
+      color: #5e5e5e;
+      padding: 0 20px;
+      &.primary {
+        color: #fff;
+        background: $mall-primary-color;
+        border: 1px solid $mall-primary-color;
+      }
+    }
+  }
+  .progress-wrapper {
+    background: #fff;
+    padding-left: $base-spacing;
+    .title {
+      font-weight: bold;
+      padding: $base-spacing $base-spacing $base-spacing 0;
+      border-bottom: 1px solid $divider-line-color;
+    }
+    .progress-list {
+      padding: $base-spacing $base-spacing $base-spacing 0;
+      .status {
+        color: #666;
+        font-weight: bold;
+      }
+      .desc {
+        margin-top: 15px;
+        color: #666;
+        white-space: pre-wrap;
+      }
+      .date-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+        .date {
+          font-size: $desc-font-size;
+          color: $grey-text;
+          margin-right: 20px;
+        }
+        .btn-wrapper {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          white-space: nowrap;
+          overflow-x: auto;
+          .btn {
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 26px;
+            &.primary {
+              color: $mall-primary-color;
+            }
+            &.text {
+              color: #5484b5;
+            }
+          }
+          .btn + .btn {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+  .timeline {
+    position: relative;
+    background: #fff;
+    &__line {
+      position: absolute;
+      top: 0;
+      left: $dot-width/2;
+      bottom: 0;
+      width: 1px;
+      background: #cccccc;
+    }
+    &__dot {
+      position: absolute;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: $dot-width;
+      height: $dot-width;
+      background: #fff;
+      border-radius: 50%;
+      border: 1px solid #cccccc;
+    }
+    &__content {
+      padding-left: $base-spacing + 30px;
+      padding-bottom: $base-spacing;
+    }
+    &.active {
+      .timeline__dot {
+        background: #83e371;
+        border: 5px solid #fff;
+        box-shadow: 0px 0px 30px #47c43c;
+      }
+      .timeline__content {
+        .status {
+          font-weight: bold;
+          color: #222;
+        }
+      }
+    }
+    &.last {
+      .timeline__line {
+        background: transparent;
+      }
+      .timeline__content {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .refund-amount {
+    @include flex-center;
+    flex-direction: column;
+    margin-top: 20px;
+    background: #fff;
+    text-align: center;
+    padding: $base-spacing;
+    .title {
+      font-weight: bold;
+    }
+    .content {
+      margin-top: 10px;
+      color: $mall-primary-color;
+      font-weight: bold;
+      font-size: 32px;
+      &.desc {
+        margin-top: 20px;
+        color: $grey-text;
+        font-weight: normal;
+        font-size: 28px;
+      }
+    }
+  }
+  .product-list {
+    background: #fff;
+    padding: 0 $base-spacing;
+    margin: 20px 0;
+    &__item {
+      display: flex;
+      padding: $base-spacing 0;
+      border-bottom: 1px solid $divider-line-color;
+      &:last-child {
+        border-bottom: none;
+      }
+      .cover {
+        display: flex;
+        align-items: center;
+        height: 160px;
+        margin-right: $base-spacing;
+        .img {
+          width: 160px;
+          height: 160px;
+          border: 1px solid #e8e8e8;
+        }
+      }
+      .info {
+        flex: 1;
+        .name {
+          word-break: break-all;
+        }
+        .specs {
+          margin-top: 25px;
+          font-size: $desc-font-size;
+          color: $grey-text;
+        }
+        .price-qty {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 25px;
+          .price {
+            position: relative;
+            font-size: 28px;
+            color: #222;
+            font-weight: bold;
+          }
+          .qty {
+            font-size: $desc-font-size;
+            color: $grey-text;
+          }
+        }
+      }
+    }
+  }
+  .button-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $bottom-wrapper-zIndex;
+  }
+  .order-info {
+    background: #fff;
+    padding: $base-spacing;
+    .title {
+      padding-bottom: $base-spacing;
+      border-bottom: 1px solid $divider-line-color;
+    }
+    .info-list {
+      padding: $base-spacing;
+    }
+    .list-item {
+      display: flex;
+      justify-content: space-between;
+      margin-top: $base-spacing;
+      font-size: 26px;
+      color: $grey-text;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .copy-btn {
+      color: $mall-primary-color;
+    }
+  }
+  .dialog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    .title {
+      font-size: 32px;
+      margin: $base-spacing 0;
+    }
+    .desc {
+      font-size: 28px;
+    }
+    .input-wrap {
+      margin: 30px 0;
+      width: 75vw;
+      border: 1px solid $divider-line-color;
+      padding: 10px;
+    }
+    .btn-wrap {
+      display: flex;
+      border-top: 1px solid $divider-line-color;
+      width: 100vw;
+      height: 80px;
+      .btn {
+        flex: 1;
+        @include flex-center;
+        &.confirm {
+          color: $mall-primary-color;
+        }
+      }
+    }
+  }
+  .img-list {
+    display: flex;
+    margin-top: 15px;
+    &__item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #f9f9f9;
+      width: 180px;
+      height: 180px;
+      border: 1px dashed #f9f9f9;
+      .img-item {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .img-list__item + .img-list__item {
+      margin-left: 30px;
+    }
+  }
+}

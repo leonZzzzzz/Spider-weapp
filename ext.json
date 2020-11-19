@@ -1,0 +1,109 @@
+{
+  "extEnable": true,
+  "plugins": {},
+  "pages": [
+    "pages/custom/tabbar1",
+    "pages/activity/index",
+    "pages/news/index",
+    "pages/my/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#0D357B",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#0D357B",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#E0E0E0",
+    "selectedColor": "#0D357B",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/custom/tabbar1"
+      },
+      {
+        "text": "活动",
+        "pagePath": "pages/activity/index"
+      },
+      {
+        "text": "资讯",
+        "pagePath": "pages/news/index"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/index"
+      }
+    ]
+  },
+  "extPages": {
+    "pages/custom/tabbar1": {
+      "navigationBarTitleText": "裂变校友会",
+      "enablePullDownRefresh": true
+    },
+    "pages/activity/index": {
+      "navigationBarTitleText": "裂变校友会"
+    },
+    "pages/news/index": {
+      "navigationBarTitleText": "裂变校友会"
+    },
+    "pages/my/index": {
+      "navigationBarTitleText": "裂变校友会"
+    }
+  },
+  "extAppid": "wx61388975ab1695f9",
+  "navigateToMiniProgramAppIdList": [],
+  "ext": {
+    "tabbar": [
+      {
+        "index": 0,
+        "text": "首页",
+        "iconPath": "http://athena-1255600302.cosgz.myqcloud.com/attachments/null/5a45f1241fb543838abe8add6587fc31.png",
+        "selectedIconPath": "http://athena-1255600302.cosgz.myqcloud.com/attachments/null/9c598ab389ea4184acf2bac835410091.png"
+      },
+      {
+        "index": 1,
+        "text": "活动",
+        "iconPath": "http://athena-1255600302.cosgz.myqcloud.com/attachments/component/5acc84b948344cc9b0bd2f7020444b93.png",
+        "selectedIconPath": "http://athena-1255600302.cosgz.myqcloud.com/attachments/null/1397570d281a48c3ab26bb26734ad2e0.png"
+      },
+      {
+        "index": 2,
+        "text": "资讯",
+        "iconPath": "http://athena-1255600302.cosgz.myqcloud.com/attachments/component/8fbb5ce7f52b43f28bfc2b44bb76c5da.png",
+        "selectedIconPath": "http://athena-1255600302.cosgz.myqcloud.com/attachments/null/6f070621f885443db26cc0d88f778d5a.png"
+      },
+      {
+        "index": 3,
+        "text": "我的",
+        "iconPath": "http://athena-1255600302.cosgz.myqcloud.com/attachments/component/856fc80de0954440b2d6b751c1d736d0.png",
+        "selectedIconPath": "http://athena-1255600302.cosgz.myqcloud.com/attachments/null/2f1cef5c08a044df865b7de25ff78193.png"
+      }
+    ],
+    "theme": {
+      "--color-primary": "#0D357B",
+      "--color-primary2": "rgb(207, 215, 229)",
+      "--color-primary4": "rgb(158, 174, 202)",
+      "--color-primary6": "rgb(110, 134, 176)",
+      "--color-primary8": "rgb(61, 93, 149)"
+    },
+    "pageConfig": [
+      {
+        "layoutAppId": "b7a7823032b111ea9921875fd1425b4a",
+        "fileId": "3152eda032b111ea9921875fd1425b4a",
+        "filledBlock": {
+          "isHeaderColor": true,
+          "height": 300,
+          "themeColor": "#0D357B"
+        }
+      }
+    ],
+    "config": {
+      "HOME_PATH": "/pages/custom/tabbar1",
+      "baseUrl": "https://x.wego168.com/lbxyh/",
+      "IMG_HOST": "https://athena-1255600302.cosgz.myqcloud.com",
+      "appId": "wx61388975ab1695f9"
+    }
+  }
+}

@@ -1,0 +1,441 @@
+.alumni-card {
+  // margin: 20px 30px;
+  margin: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  padding: 30px 20px;
+  position: relative;
+  .head-image {
+    position: relative;
+    .default-head {
+      width: 140px;
+      height: 140px;
+      text-align: center;
+      line-height: 140px;
+      border-radius: 50%;
+      background: rgb(218, 218, 218);
+      color: #fff;
+      font-size: 100px;
+    }
+    .jiami {
+      position: absolute;
+      top: 90px;
+      right: -10px;
+      z-index: 1;
+      color: $color-grey;
+      font-size: 50px;
+    }
+    .yaoqing {
+      margin: -10px 0 0;
+      // padding: 10px 10px;
+      background: $price-color;
+      line-height: 1;
+      font-size: 24px;
+      color: #fff;
+      border-radius: 30px;
+      line-height: 2;
+      padding: 0;
+    }
+  }
+
+  .info-wrap {
+    width: 100%;
+    margin-left: 30px;
+    // padding-top: 10px;
+    .name {
+      display: flex;
+      justify-content: space-between;
+      font-size: 34px;
+      margin-bottom: 10px;
+      .name-text {
+        .qcfont {
+          font-size: 34px;
+          color: rgb(221, 193, 52);
+          margin-left: 10px;
+        }
+      }
+      .like {
+        color: rgb(204, 204, 204);
+        font-size: 40px;
+      }
+      .like-active {
+        color: $price-color;
+        font-size: 40px;
+      }
+      .yaoqing {
+        margin: 0;
+        padding: 8px 15px;
+        background: $price-color;
+        line-height: 1;
+        font-size: 24px;
+        color: #fff;
+        border-radius: 30px;
+      }
+    }
+    .desc {
+      // color: $color-grey;
+      font-size: 28px;
+      margin-top: 14px;
+      .position {
+        height: 40px;
+      }
+      .company {
+        height: 40px;
+        @include text-ellipsis();
+        white-space: normal;
+      }
+    }
+    .tags {
+      margin: 20px 0 0 0;
+      display: flex;
+      .tag {
+        // background: rgb(226, 227, 255);
+        // color: rgb(50, 153, 249);
+        font-size: 22px;
+        border-radius: 6px;
+        padding: 0px 10px;
+        // margin: 0 10px 10px 0;
+        margin-left: 10px;
+        // height: 40px;
+        // line-height: 39px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+.alumni-card-more {
+  background-color: #fff;
+  border: 1px solid rgba(239, 239, 239, 1);
+  margin: 20px 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  .top-user-wrap {
+    display: flex;
+    .head-image {
+      position: relative;
+      .default-head {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border-radius: 50%;
+        background: rgb(218, 218, 218);
+        color: #fff;
+        font-size: 60px;
+      }
+      .jiami {
+        position: absolute;
+        top: 90px;
+        right: -10px;
+        z-index: 1;
+        color: $color-grey;
+        font-size: 50px;
+      }
+      .yaoqing {
+        margin: -10px 0 0;
+        // padding: 10px 10px;
+        background: $price-color;
+        line-height: 1;
+        font-size: 20px;
+        color: #fff;
+        border-radius: 30px;
+        line-height: 1.8;
+        padding: 0;
+      }
+    }
+    .info-wrap {
+      width: 100%;
+      margin-left: 30px;
+      // padding-top: 10px;
+      .name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 34px;
+        // margin-bottom: 10px;
+        .name-text {
+          display: flex;
+          align-items: center;
+          .i-name {
+            font-size: 36px;
+            font-weight: 600;
+            @include text-ellipsis();
+          }
+          .qcfont {
+            font-size: 34px;
+            color: rgb(221, 193, 52);
+            margin-left: 10px;
+          }
+          .title-rank {
+            flex-shrink: 0;
+            margin-left: 10px;
+            background: linear-gradient(-90deg, rgba(68, 74, 82, 1) 0%, rgba(83, 89, 96, 1) 100%);
+            height: 40px;
+            border-radius: 40px;
+            display: inline-flex;
+            align-items: center;
+            color: #f1d297;
+            .icon {
+              @include img();
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: #ff010100;
+              border: 3px solid #f1d297;
+              box-sizing: border-box;
+              // line-height: 40px;
+              // text-align: center;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              .rank-icon {
+                font-size: 22px;
+                margin: 0;
+                color: #f1d297;
+              }
+            }
+            .rank-name {
+              padding: 0 10px 0 6px;
+              line-height: 1;
+              font-size: 24px;
+            }
+          }
+        }
+        .member-title {
+          flex-shrink: 0;
+          margin-left: 10px;
+          margin-right: -30px;
+          background-color: #ff6000;
+          font-size: 24px;
+          color: #fff;
+          padding: 0 10px 0px 20px;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          height: 40px;
+          line-height: 40px;
+        }
+        .like {
+          color: rgb(204, 204, 204);
+          font-size: 40px;
+        }
+        .like-active {
+          color: $price-color;
+          font-size: 40px;
+        }
+        .yaoqing {
+          margin: 0;
+          padding: 8px 15px;
+          background: $price-color;
+          line-height: 1;
+          font-size: 24px;
+          color: #fff;
+          border-radius: 30px;
+        }
+      }
+      .desc {
+        color: rgb(153, 153, 153);
+        font-size: 30px;
+        view {
+          margin-top: 10px;
+          @include text-ellipsis();
+          width: 500px;
+        }
+        .position {
+          // height: 40px;
+        }
+        .company {
+          // height: 40px;
+          @include text-ellipsis();
+          white-space: normal;
+        }
+      }
+      .tags {
+        display: flex;
+        white-space: nowrap;
+        .tag {
+          background: #ffe0c9;
+          color: #ff6000;
+        }
+      }
+    }
+  }
+  .text-wrap {
+    .line {
+      margin-top: 20px;
+      // line-height: 2;
+      font-size: 28px;
+      display: flex;
+      color: #333333;
+      .l-title {
+        color: #fff;
+        padding: 0 20px;
+        border-radius: 30px;
+        margin-right: 30px;
+        margin-top: 4px;
+        flex-shrink: 0;
+        display: inline-flex;
+        height: 40px;
+        line-height: 40px;
+        font-size: 26px;
+      }
+      .orange {
+        background-color: #ff914e;
+      }
+      .green {
+        background-color: #5bb928;
+      }
+      .l-content {
+        @include ellipsis-line();
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+.blue {
+  background: rgb(243, 245, 255);
+  .desc {
+    color: rgb(92, 118, 144);
+  }
+  .tags {
+    .tag {
+      background: rgb(196, 216, 236);
+      color: rgb(0, 123, 237);
+    }
+  }
+}
+.yellow {
+  background: rgb(255, 247, 241);
+  .desc {
+    color: rgb(139, 92, 46);
+  }
+  .tags {
+    .tag {
+      background: rgb(255, 224, 201);
+      color: rgb(255, 96, 0);
+    }
+  }
+}
+.white {
+  background: rgb(248, 248, 248);
+  .desc {
+    color: rgb(51, 51, 51);
+  }
+  .tags {
+    .tag {
+      background: rgb(230, 217, 209);
+      color: rgb(184, 162, 145);
+    }
+  }
+}
+
+.overflow-x {
+  width: 600px;
+  display: inline-flex;
+  vertical-align: top;
+  margin: 0;
+  margin-right: 20px;
+}
+.ml {
+  margin-left: 20px;
+}
+
+.alumni-card-scrollX {
+  vertical-align: top;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-right: 30px;
+  .alumni-card-box {
+    width: 270px;
+    position: relative;
+    .head-image {
+      border: 2px solid rgb(254, 210, 140);
+      width: 120px;
+      height: 120px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+      .default-head {
+        text-align: center;
+        line-height: 120px;
+        background: rgb(218, 218, 218);
+        color: #fff;
+        font-size: 60px;
+      }
+    }
+    .jiami {
+      position: absolute;
+      top: 70px;
+      right: 60px;
+      z-index: 1;
+      color: $color-grey;
+      font-size: 50px;
+    }
+    .info-wrap {
+      margin-top: -60px;
+      background: #fff;
+      overflow: hidden;
+      border-radius: 10px;
+      height: 330px;
+      padding-top: 100px;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 90px 20px 30px;
+      .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .name-text {
+          @include text-ellipsis();
+        }
+        .qcfont {
+          font-size: 34px;
+          color: rgb(221, 193, 52);
+          margin-left: 10px;
+        }
+      }
+      .desc {
+        color: $color-grey;
+        font-size: 28px;
+        margin-top: 20px;
+        .position {
+          height: 40px;
+          @include text-ellipsis();
+        }
+        .company {
+          height: 80px;
+          @include ellipsis-line();
+          white-space: normal;
+        }
+      }
+      .tags {
+        margin: 20px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .tag {
+          background: rgb(226, 227, 255);
+          font-size: 22px;
+          line-height: 1;
+          border-radius: 6px;
+          padding: 4px 10px;
+          margin-left: 10px;
+          color: rgb(50, 153, 249);
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.first {
+  margin-left: 30px;
+}

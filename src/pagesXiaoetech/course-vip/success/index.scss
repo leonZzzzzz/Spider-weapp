@@ -1,0 +1,36 @@
+.success-wrap {
+  position: relative;
+  margin: 30px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background: #fff;
+  .success-status {
+    padding: 35px 0;
+    text-align: center;
+    color: #68c000;
+    .qcfont {
+      font-size: 150px;
+    }
+    .status-title {
+      font-size: 36px;
+      font-weight: normal;
+      margin-top: 25px;
+    }
+    .status-info {
+      font-size: 16px;
+      color: #b1b1b1;
+    }
+    .iconfont-success {
+      font-size: 55px;
+    }
+  }
+
+  .btn-box {
+    margin: 150px 0 50px 0;
+    display: flex;
+    button {
+      flex: 1;
+      margin: 0 20px;
+    }
+  }
+}

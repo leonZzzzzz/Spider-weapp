@@ -1,0 +1,110 @@
+// page {
+//   // background: #fff;
+//   min-height: 100%;
+// }
+// .survey-detail {
+//   background: rgb(36, 66, 236);
+//   min-height: 100%;
+// }
+.survey-result {
+  background: #fff;
+  position: relative;
+  z-index: 0;
+  .top-bg {
+    @include img();
+  }
+  .result-box {
+    background: #fff;
+    padding: 30px;
+    .result {
+      background: #fff;
+      border: 1px solid rgb(236, 236, 236);
+      border-radius: 10px;
+      overflow: hidden;
+      .result-item {
+        padding: 30px;
+        font-size: 32px;
+        @include top-line();
+        &:first-child {
+          &::before {
+            content: '';
+          }
+        }
+        .result-item-title-box {
+          padding-bottom: 30px;
+          .title {
+            color: #000;
+            font-size: 32px;
+            margin-bottom: 20px;
+          }
+          .picture {
+            margin-bottom: 20px;
+            @include img();
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .answer-item {
+          // display: flex;
+          // align-items: center;
+          padding: 30px 0;
+          .a-title {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            .a-title-img {
+              @include img();
+              margin-right: 30px;
+              width: 100%;
+            }
+            .a-title-value {
+              width: 100%;
+              color: #000;
+            }
+          }
+          .progress {
+            display: flex;
+            align-items: center;
+            position: relative;
+            line-height: 1;
+            .progress-bar {
+              width: 100%;
+              .progress-box {
+                background: rgb(230, 230, 230);
+                height: 20px;
+                border-radius: 100px;
+                overflow: hidden;
+                position: relative;
+                .progress-length {
+                  position: absolute;
+                  background-color: rgb(79, 97, 236);
+                  left: 0;
+                  top: 0;
+                  height: 100%;
+                  border-radius: 100px;
+                  line-height: 1;
+                  white-space: nowrap;
+                  width: 50%;
+                }
+              }
+            }
+            .progress-text {
+              font-size: 32px;
+              color: rgb(151, 151, 151);
+              width: 140px;
+              text-align: right;
+              flex-shrink: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .result-submit {
+    padding: 0 30px;
+    button {
+      background: var(--color-primary);
+    }
+  }
+}

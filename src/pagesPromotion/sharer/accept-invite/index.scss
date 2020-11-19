@@ -1,0 +1,84 @@
+page {
+  min-height: 100%;
+  background: linear-gradient(rgb(228, 90, 34), rgb(255, 152, 91));
+}
+.accept-invite {
+  position: relative;
+  &__mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+  }
+  &__icon {
+    color: #666;
+    position: absolute;
+    top: 300px;
+    right: 90px;
+    z-index: 101;
+  }
+  &__main {
+    padding: 60px 0;
+    position: absolute;
+    background: #fff;
+    top: 280px;
+    left: 70px;
+    right: 70px;
+    border-radius: 5px;
+    z-index: 10;
+    &-title {
+      padding-bottom: 40px;
+      font-size: 40px;
+    }
+    &-tip {
+      font-size: 30px;
+      padding-bottom: 100px;
+    }
+    &-button {
+      height: 90px;
+      width: 80%;
+      line-height: 90px;
+      font-size: 34px;
+      margin: 0 auto;
+      border-radius: 5px;
+      background: #20b31c;
+      color: #fff;
+    }
+    &--center {
+      text-align: center;
+    }
+  }
+  .bg {
+    @include img();
+    // width: 100%;
+  }
+  .user-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    .user {
+      margin-left: 30px;
+      color: #fff;
+      .name {
+        font-size: 36px;
+      }
+    }
+  }
+  .click-btn {
+    @include reset-btn-style();
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgba(51, 51, 51, 0);
+    top: 770px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

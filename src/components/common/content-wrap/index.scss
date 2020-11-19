@@ -1,0 +1,16 @@
+// @import '../../../styles/index.scss';
+
+.content-wrap {
+  // background: #fff;
+  .title {
+    padding: 30px;
+    @include bottom-line();
+  }
+  .content-text {
+    padding: 20px 30px;
+    box-sizing: border-box;
+  }
+}
+.white {
+  background: #fff;
+}

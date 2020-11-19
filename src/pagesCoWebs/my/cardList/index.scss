@@ -1,0 +1,186 @@
+
+.card {
+  .bg-top {
+    height: 100px;
+    background: var(--color-primary);
+  }
+  .card-wrap {
+    margin: -70px 30px 0 30px;
+    background: #fff;
+    padding: 30px 30px 10px 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    .info-wrap {
+      display: flex;
+      align-items: center;
+      .head-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        line-height: 0;
+        overflow: hidden;
+        margin-right: 30px;
+        flex-shrink: 0;
+        image {
+          width: 100%;
+          height:100%;
+          border-radius:50%;
+        }
+      }
+      .info {
+        width: 100%;
+        .name {
+          display: flex;
+          justify-content: space-between;
+          font-size: 36px;
+          .name-text {
+            .qcfont {
+              font-size: 34px;
+              color: rgb(221, 193, 52);
+              margin-left: 10px;
+            }
+          }
+          .edit {
+            color: $color-grey;
+            font-size: 24px;
+            line-height: 40px;
+            height: 40px;
+            border-radius: 30px;
+            .qcfont {
+              margin-right: 10px;
+            }
+          }
+        }
+        .desc {
+          font-size: 28px;
+          color: $color-grey;
+          line-height: 1.5;
+        }
+      }
+    }
+    .tags {
+      margin: 30px 0 10px 0;
+      display: flex;
+      flex-wrap: wrap;
+      .tag {
+        background: rgb(226, 227, 255);
+        font-size: 24px;
+        border-radius: 8px;
+        padding: 0px 16px;
+        margin: 0 16px 16px 0;
+        @include text-ellipsis();
+      }
+      .tag-edit{
+        font-size: 24px;
+        color: #888;
+        border-radius: 8px;
+        padding: 0px 16px;
+        margin: 0 16px 16px 0;
+        height: 40px;
+        line-height: 38px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        background: #fff;
+      }
+    }
+    .cells-list{
+      display:flex;
+      justify-content: space-between;
+      font-size:28px;
+      margin-top: 30px;
+      padding-top: 30px;
+      .cells {
+      color: rgb(97, 97, 97);
+      font-size: 30px;
+      
+      @include top-line();
+      .cell {
+        padding: 10px 0;
+        .qcfont {
+          margin-right: 10px;
+          color: var(--color-primary);
+        }
+      }
+    }
+    }
+    .intro {
+      font-size: 28px;
+      color: $color-grey;
+      padding: 20px 0;
+    }
+    .icon-tags {
+      @include top-line(30px, 30px);
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .circle-box {
+    margin: 30px;
+    background: #fff;
+    // padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    .title {
+      @include bottom-line();
+      padding: 30px;
+    }
+  }
+  .data-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    background: $page-background-color;
+    .item {
+      color: $color-grey;
+      text-align: center;
+      font-size: 28px;
+      display: inline-flex;
+      align-items: center;
+      .qcfont {
+        margin-right: 10px;
+      }
+    }
+  }
+  .group-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 30px;
+    background: $page-background-color;
+    .item {
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      width: 330px;
+      display: flex;
+      padding: 40px 0;
+      padding: 30px;
+      box-sizing: border-box;
+      align-items: center;
+      &:nth-child(2n+1) {
+        margin-right: 30px;
+      }
+      .qcfont {
+        font-size: 50px;
+        color: var(--color-primary);
+        margin-right: 30px;
+      }
+      .text-wrap {
+        font-size: 32px;
+        .desc {
+          font-size: 26px;
+          color: $color-grey;
+          margin-top: 15px;
+        }
+      }
+    }
+    .hover-item {
+      background: rgb(252, 252, 252);
+    }
+  }
+}
+.setting{
+        color:grey;
+            font-size: 24px;
+            padding-top:10px;
+      }

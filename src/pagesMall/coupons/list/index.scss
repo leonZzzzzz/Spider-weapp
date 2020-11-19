@@ -1,0 +1,221 @@
+
+page {
+  background: #fff;
+}
+
+.qc-mall-coupon {
+  white-space: nowrap;
+  padding: 20px 30px;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+.qc-mall-coupon__item {
+  position: relative;
+  background: #FCEEE8;
+  color: #FF4F03;
+  font-size: 26px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  &:last-child {
+    margin-right: 30px;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    white-space: normal;
+  }
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: -15px;
+    // left: 245px;
+    right: 175px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: -15px;
+    // left: 245px;
+    right: 175px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  &__left{
+    // width: 500px;
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    border-right: 1px dashed #fff;
+    .title, .date, .name {
+      margin-top: 4px;
+      font-size: 24px;
+      opacity: 0.8;
+    }
+    .name {
+      width: 100%;
+      @include text-ellipsis();
+    }
+    .title {
+      width: 100%;
+      font-size: 30px;
+      margin-bottom: 10px;
+      @include text-ellipsis();
+    }
+    .date {
+      @include text-ellipsis();
+      opacity: 0.8;
+    }
+  }
+  &__right{
+    flex-shrink: 0;
+    font-size: 32px;
+    width: 150px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .price-value {
+    font-size: 46px;
+  }
+}
+.qc-mall-coupon__item__status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.receive-dialog {
+  position: relative;
+  width: 550px;
+  &__close {
+    text-align: center;
+    // margin-top: 60px;
+    font-size: 80px;
+    padding: 20px;
+    color: #fff;
+  }
+  &__box {
+    position: relative;
+    // height: 460px;
+    &__top {
+      border-radius: 50% 50% 0 0;
+      background: #FF5103;
+      text-align: center;
+      line-height: 150px;
+      height: 200px;
+      font-size: 38px;
+      color: #fff;
+
+    }
+    &__center {
+      height: 350px;
+      background: #FF5103;
+      border-radius: 0 0 30px 30px;
+      transform: translate(0, -50rpx);
+    }
+    &__bottom {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 235px;
+      transform: translate(0, -50rpx);
+      image {
+        width: 100%;
+        height: 100%;
+      }
+      .receive-btn {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 280px;
+        height: 90px;
+        line-height: 90px;
+        color: #FF4F03;
+        font-size: 30px;
+        text-align: center;
+        background: #fff;
+        border-radius: 15px;
+      }
+    }
+  }
+  &__coupon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 30px 30px 30px;
+    padding: 20px 0 50px 0;
+    background: #FFEDE9;
+    color: #892A00;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 2px 2px 10px 0 #E5280A;
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: -20px;
+      left: 125px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #FF5103;
+    }
+    &::after {
+      content: ' ';
+      position: absolute;
+      bottom: -20px;
+      left: 125px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #FF5103;
+    }
+    &__left {
+      width: 130px;
+      height: 100%;
+      color: #E83F00;
+      text-align: center;
+      .price {
+        // transform: translate(0, -20px);
+      }
+      .price-value {
+        font-size: 46px;
+        font-weight: bold;
+      }
+    }
+    &__right {
+      padding: 0 20px;
+      padding-bottom: 20px;
+      margin-left: 15px;
+      border-left: 1px dashed #892A00;
+      .title {
+        font-size: 28px;
+      }
+      .name, .date {
+        margin-top: 10px;
+      }
+      .date {
+        opacity: 0.8;
+      }
+    }
+  }
+}

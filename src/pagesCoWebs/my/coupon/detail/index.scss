@@ -1,0 +1,29 @@
+
+.detail {
+  
+  .cover {
+    width: 100%;
+    @include img();
+  }
+  .title-wrap {
+    background: #fff;
+    padding: 30px;
+    font-size: 34px;
+  }
+  .desc {
+    background: #fff;
+    padding: 0 30px;
+    font-size: 28px;
+    color: $color-grey;
+    margin-bottom: 30px;
+    .qcfont {
+      margin-right: 10px;
+    }
+    .item {
+      padding-bottom: 20px;
+    }
+  }
+  .content {
+    padding: 30px;
+  }
+}

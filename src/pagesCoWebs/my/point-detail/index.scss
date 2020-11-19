@@ -1,0 +1,124 @@
+page{
+  background:#fff;
+  height:100%;
+}
+.container{
+  margin:20px;
+  .con{
+    height:315px;
+  }
+  .image{
+width:710px;
+height:315px;
+position:absolute;
+    z-index: -2;
+    top:20rpx;
+  }
+  .con-point{
+    display: flex;
+justify-content: space-between;
+      // height:200px;
+      // width: 710px;
+padding:0px 100px;
+padding-top:115px;
+.line_point{
+  background:#fff;
+  width:2px;
+  
+}
+    .total{
+      text-align: center;
+      color: #fff;
+      
+      view:nth-child(1){
+        font-size:26px;
+      }
+      view:nth-child(2){
+        // font-size:26px;
+        // line-height: 350px;
+        // width:710px;
+        font-size:50px;
+        // top:0;
+      }
+    }
+  }
+  
+  .lists{
+    display:flex;
+    flex-direction: column;
+    .list-row{
+      background:#fff;
+      border-radius: 10px;
+      font-size:28px;
+      display:flex;
+      justify-content: space-between;
+      padding:15px 20px;
+      .one{
+        margin-top:17px;
+      }
+      .col:nth-child(1){
+        width:550px;
+      }
+      .col{
+        display:flex;
+        flex-direction: column;
+        // text-align: center;
+        text:nth-child(1){
+          font-size:26px;
+        }
+        // text:nth-child(2){
+        //   font-size:28px;
+        //   display: -webkit-box;
+        //   overflow: hidden;
+        //   -o-text-overflow: ellipsis;
+        //   text-overflow: ellipsis;
+        //   -webkit-line-clamp: 2;
+        //   -webkit-box-orient: vertical;
+        //   white-space: normal;
+        // }
+        text:nth-child(2){
+          color:#999;
+          font-size:24px;
+        }
+        .orange{
+          line-height: 30px;
+          color:rgb(238, 110, 25);
+          font-size:26px;
+        }
+        .green{
+          line-height: 30px;
+          color:rgb(120, 212, 58) !important;
+          font-size:26px;
+        }
+
+      }
+      
+    }
+  }
+  .mar{
+    margin-top:40px;
+    .bor-bot{
+      border-bottom:2px solid #eee;
+    }
+  }
+}
+.shareFriend{
+  position:absolute;
+  bottom:90px;
+  width:100%;
+  font-size:28px;
+  text-align: center;
+  text{
+  width:400px;
+  text-align: center;
+  background:rgb(91, 177, 57);
+  color:#fff;
+  padding:15px 110px;
+  border-radius: 50px;
+}
+}
+.right{
+  font-size:24px;
+}
+
+

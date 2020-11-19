@@ -1,0 +1,23 @@
+.qc-swiper {
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  transform: translateY(0);
+  .qc-swiper_item {
+    // border-radius: 10px;
+    // overflow: hidden;
+    @include img();
+  }
+}
+.qc-swiper-box {
+  padding: 10px 30px;
+  position: relative;
+  .bg-top {
+    background: var(--color-primary);
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}

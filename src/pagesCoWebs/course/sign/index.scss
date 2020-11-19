@@ -1,0 +1,58 @@
+@import '../../../styles/index.scss';
+
+.sign {
+  .sign-title {
+    font-size: 30px;
+    padding: 30px;
+    background: #fff;
+    @include bottom-line();
+  }
+  .list {
+    .item {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 30px;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      font-size: 30px;
+      display: flex;
+      &:before {
+        left: 15px;
+      }
+      .msg {
+        margin-left: 30px;
+        flex: 1;
+        .header,
+        .content {
+          display: flex;
+        }
+        .header {
+          justify-content: space-between;
+          height: 50px;
+        }
+        .content {
+          flex-wrap: wrap;
+          text {
+            line-height: 1;
+            height: 30px;
+            margin-top: 20px;
+            margin-right: 20px;
+            padding-right: 20px;
+            border-right: 0 solid #d4d4d4;
+          }
+          text:last-child {
+            padding-left: 0;
+            border: none;
+          }
+          .name {
+            position: absolute;
+            top: 8px;
+            padding: 0;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}

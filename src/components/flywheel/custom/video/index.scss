@@ -1,0 +1,22 @@
+.qc-video {
+  // padding: 30px 0;
+  box-sizing: border-box;
+  background: #fff;
+  &__video {
+    display: block;
+    width: 100%;
+  }
+  &__box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__stop{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #fff;
+  }
+}

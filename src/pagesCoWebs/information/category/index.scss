@@ -1,0 +1,33 @@
+page {
+  background: #fff;
+  font-size: 30rpx;
+  min-height: 100%;
+}
+.category {
+  padding: 60px;
+  .title {
+    font-size: 40px;
+  }
+  .item {
+    margin-top: 40px;
+    position: relative;
+    line-height: 0;
+    .cover {
+      @include img();
+      width: 100%;
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      line-height: 1.5;
+      .title {
+        font-size: 40px;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

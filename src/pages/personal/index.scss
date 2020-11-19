@@ -1,0 +1,191 @@
+.personal {
+  position: relative;
+  overflow-x: hidden;
+  .circle {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff3333;
+    height: 500px;
+    width: 130%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  &-content {
+    position: relative;
+    &__user {
+      display: flex;
+      padding: 30px;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      &-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #eee;
+      }
+      &-info {
+        display: inline-flex;
+        align-items: center;
+      }
+      &-name {
+        font-size: 34px;
+        margin-left: 20px;
+      }
+      &-tag {
+        font-size: 24px;
+        background: rgb(255, 234, 186);
+        color: rgb(108, 85, 14);
+        border-radius: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 20px;
+        padding: 0 20px 0 10px;
+      }
+      &-detail {
+        font-size: 24px;
+        .personal-content__user-detail-icon {
+          margin-left: 10px;
+          font-size: 24px;
+        }
+      }
+      &-login {
+        width: 100%;
+        background: none;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        padding: 0;
+      }
+    }
+  }
+  .price-wrap {
+    background: #fff;
+    margin: 0 30px;
+    border-radius: 15px;
+    .group {
+      display: flex;
+      // @include bottom-line(30px, 30px);
+      .item {
+        flex: 1;
+        text-align: center;
+        padding: 20px 0;
+        &:not(:first-child) {
+          position: relative;
+          &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 50px;
+            bottom: 50px;
+            border-left: 2px solid #f6f6f6;
+          }
+        }
+        .num {
+          font-size: 34px;
+          font-weight: bold;
+        }
+        .text {
+          // color: $color-grey;
+          font-size: 28px;
+          margin-top: 6px;
+          line-height: 2;
+          position: relative;
+          .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ff3333;
+            position: absolute;
+            top: 10px;
+            right: 60px;
+          }
+        }
+      }
+    }
+    .news {
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      .title {
+        font-size: 30px;
+        flex-shrink: 0;
+        font-weight: bold;
+        margin-right: 20px;
+        .t-2 {
+          color: #ff3333;
+        }
+      }
+      .content {
+        // color: $color-grey;
+        font-size: 28px;
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        .c-t {
+          max-width: 450px;
+          flex-shrink: 0;
+          // @include text-ellipsis();
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .group {
+    display: flex;
+    .g-item {
+      flex: 1;
+      text-align: center;
+      position: relative;
+      padding: 30px 0 40px 0;
+      font-size: 26px;
+      &:active {
+        background: rgb(250, 250, 250);
+      }
+      .count {
+        position: absolute;
+        top: 24px;
+        right: 30px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        border: 2px solid #ff5433;
+        font-size: 22px;
+        color: #ff5433;
+        background: #fff;
+      }
+      .qcfont {
+        color: #ff5433;
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .s-group {
+    display: flex;
+    flex-wrap: wrap;
+    .s-item {
+      width: 172.5px;
+      height: 172.5px;
+      font-size: 26px;
+      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      &:active {
+        background: rgb(250, 250, 250);
+      }
+      .qcfont {
+        color: $red-color;
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

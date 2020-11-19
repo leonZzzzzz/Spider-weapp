@@ -1,0 +1,55 @@
+
+
+.addnewcard{
+  margin:20px;
+}
+.tag{
+  font-size:40px;
+}
+.red{
+  font-size:40px;
+  color:rgb(243, 71, 28);
+}
+.cards{
+  margin:20rpx;
+}
+
+.cardlist{
+  // background:rgb(142,146,217);
+  border-radius:10px;
+margin-bottom:20rpx;
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+padding:20px;
+  &-img{
+    width:130px;height:130px;
+    border-radius:50%;
+  }
+  &-info{
+    width:430px;
+    display:flex;
+    flex-direction:column;
+    font-size:28px;
+    &-name{
+      font-size:34px;
+      margin-bottom:10px;
+    }
+    &-duty{
+      
+      font-size:26px;
+      margin-bottom:10px;
+    }
+    &-firm text{
+      padding:7px 25px;
+      font-size:24px;
+      background:#999;
+      border-radius:10px;
+      margin-right:20px;
+      margin-top:20px;
+    }
+  }
+}
+.star{
+  font-size:40px;
+}

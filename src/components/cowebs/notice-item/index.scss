@@ -1,0 +1,45 @@
+.notice-item {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  @include bottom-line(30px);
+  .content {
+    margin-left: 30px;
+    width: 590px;
+    .title-wrap {
+      display: flex;
+      justify-content: space-between;
+      .title {
+        font-size: 30px;
+        @include text-ellipsis();
+      }
+      .time {
+        font-size: 24px;
+        color: $color-grey;
+      }
+    }
+    .content-wrap {
+      display: flex;
+      justify-content: space-between;
+      font-size: 26px;
+      color: $color-grey;
+      margin-top: 10px;
+      .text {
+        @include text-ellipsis();
+      }
+      .num {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background: red;
+        border-radius: 50%;
+        color: #fff;
+        flex-shrink: 0;
+        text-align: center;
+        margin-left: 10px;
+        // padding: 0 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.address-lists {
+  margin-top: 20px;
+  background: #fff;
+  .address-list {
+    margin: 0 30px;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__info {
+      flex: 1;
+    }
+    &__title {
+      font-size: 28px;
+    }
+    &__tags--default {
+      background: linear-gradient(left, rgb(255, 52, 50), rgb(255, 96, 0));
+      // background: #df2edf;
+      font-size: 24px;
+      padding: 4px 8px;
+      color: #fff;
+      border-radius: 10px;
+    }
+    &__other {
+      font-size: 26px;
+      color: #666;
+      margin-top: 10px;
+    }
+    &__mobile {
+      margin-left: 10px;
+    }
+    &__icon {
+      margin-left: 30px;
+      .qc-icon-bianji {
+        font-size: 30px;
+      }
+    }
+  }
+  &__fixed--button {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    text-align: center;
+    color: #fff;
+    background: #ff5433;
+    padding: 20px 0;
+    font-size: 28px;
+    border-radius: 10px;
+  }
+}

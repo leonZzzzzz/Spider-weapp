@@ -1,0 +1,193 @@
+
+.activity-wrap {
+  background: #fff;
+  padding: 30px;
+  display: flex;
+  .cover {
+    flex-shrink: 0;
+    margin-right: 30px;
+    width: 210px;
+    height: 150px;
+    @include img();
+    border-radius: 10px;
+  }
+  .title-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    .title {
+      @include ellipsis-line();
+    }
+    .time-price {
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+      color: $color-grey;
+      .time-wrap {
+        .time {
+          color: rgb(49, 49, 49);
+        }
+      }
+      .price {
+        color: $price-color;
+      }
+    }
+  }
+}
+
+.sign-wrap {
+  background: #fff;
+  margin-top: 30px;
+  .title {
+    padding: 30px;
+  }
+  .item {
+    display: flex;
+    padding: 30px;
+    font-size: 30px;
+    .label {
+      flex-shrink: 0;
+      width: 200px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .value {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      input {
+        width: 100%;
+      }
+      button {
+        line-height: 2.5;
+        font-size: 30px;
+        margin: 0;
+        flex-shrink: 0;
+        margin-left: 10px;
+      }
+      .file {
+        @include ellipsis-line(2);
+        white-space: pre-wrap;
+        word-break: break-all;
+        width: 100%;
+      }
+    }
+    .picker {
+      width: 100%;
+      .picker__inner {
+        display: flex;
+          align-items: center;
+          justify-content: space-between;
+        .iconfont {
+          color: $color-grey;
+          padding: 0 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .radio-item {
+    font-size: 30px;
+    .label {
+      padding: 30px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .at-radio {
+      padding-left: 22px;
+      .at-radio__title {
+        font-size: 30px;
+      }
+    }
+    .at-checkbox {
+      padding-left: 22px;
+      .at-checkbox__title {
+        font-size: 30px;
+      }
+    }
+    .radio-group {
+      @include top-line();
+      .radio-cell {
+        padding: 20px 30px 20px 52px;
+        display: flex;
+        align-items: center;
+        .qcfont {
+          font-size: 40px;
+          margin-right: 30px;
+          flex-shrink: 0;
+          color: $color-grey;
+          transition: all .3s;
+        }
+        .qcfont-active {
+          color: var(--color-primary);
+        }
+        &:not(:first-child) {
+          @include top-line(30px);
+        }
+      }
+    }
+  }
+  .top-line {
+    @include top-line(230px);
+  }
+  .xin {
+    color: $red-color;
+    width: 25px;
+    display: inline-block;
+    font-size: 40px;
+    height: 20px;
+    line-height: 1;
+  }
+}
+
+.sign-btn {
+  padding: 100px 30px 30px;
+  background: #f6f6f6;
+  button {
+    background: var(--color-primary);
+    color: #fff;
+  }
+}
+
+.share-btn-dialog {
+  background: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  .item {
+    padding: 40px;
+    // height: 200px;
+    // line-height: 200px;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    flex: 1;
+    line-height: 1.5;
+    font-size: 30px;
+    .qcfont {
+      font-size: 100px;
+    }
+    .qc-icon-dingdan1 {
+      color: rgb(65, 175, 53);
+    }
+    .qc-icon-haibao1 {
+      color: rgb(255, 168, 0);
+    }
+    &:last-child {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 90px;
+        bottom: 90px;
+        border-left: 1Px solid #dadada;
+      }
+    }
+  }
+  .hover-item {
+    background: rgb(228, 228, 228);
+  }
+}

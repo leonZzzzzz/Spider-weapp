@@ -1,0 +1,16 @@
+.qc-notice-wrap {
+  background: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  .qcfont {
+    font-size: 40px;
+    margin-right: 20px;
+  }
+  .title {
+    @include text-ellipsis();
+  }
+}

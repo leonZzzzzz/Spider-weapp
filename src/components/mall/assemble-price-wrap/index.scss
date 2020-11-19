@@ -1,0 +1,80 @@
+
+.vip-price-wrap {
+  height: 100px;
+  background: linear-gradient(to right, rgb(244, 103, 40), rgb(238, 53, 43));
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  .time-wrap {
+    box-sizing: border-box;
+    height: 100px;
+    color: #fff;
+    text-align: right;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .date {
+      margin-right: 10px;
+    }
+    .time {
+      background: #fff;
+      color: rgb(238, 53, 43);
+      border-radius: 6px;
+      margin: 0 10px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+  .assemble-price-wrap {
+    width: 280px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 130px;
+    background: linear-gradient(to right, rgb(255, 198, 52), rgb(238, 53, 43));
+    border-top-right-radius: 30px;
+    z-index: 2;
+    &::before{
+      content: '';
+      position: absolute;
+      right: -14px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-color: rgb(238, 53, 43) transparent;
+      border-width: 0 14px 105px 0;
+      border-style: solid;
+    }
+    .price-wrap {
+      .price {
+        color: #fff;
+        @include price-with-small-symbol(40px, #fff, 5px, 20px);
+      }
+      .origin-price {
+        color: #fff;
+        text-decoration: line-through;
+        margin-left: 10px;
+        font-size: 26px;
+      }
+    }
+    .num-tuan {
+      background: rgb(255, 255, 255);
+      padding: 5px 20px;
+      border-radius: 20px;
+      color: rgb(238, 53, 43);
+      text-align: left;
+      font-size: 24px;
+      // width: 120px;
+    }
+  }
+}

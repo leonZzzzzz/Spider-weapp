@@ -1,0 +1,39 @@
+page {
+  min-height: 100%;
+  background: #fff;
+}
+.bottom-btn {
+  height: 110px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 2;
+  button {
+    background: #294A7B;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    line-height: 110px;
+  }
+}
+
+.kefu-dialog {
+  .kefu-btn {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+    &:first-child {
+      margin-bottom: 30px;
+    }
+    button {
+      background: #294A7B;
+      color: #fff;
+      font-size: 32px;
+      line-height: 3;
+      border-radius: 0;
+    }
+  }
+}

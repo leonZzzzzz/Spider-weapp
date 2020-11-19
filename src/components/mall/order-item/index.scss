@@ -1,0 +1,108 @@
+
+.order-item {
+  background: #fff;
+  margin-top: 20px;
+  .top-wrap {
+    @include bottom-line();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 30px;
+    .yellow {
+      color: rgb(255, 156, 0);
+    }
+    .grey {
+      color: $color-grey;
+    }
+    .left-text {
+      display: inline-flex;
+      align-items: center;
+      .order-no {
+        line-height: 1;
+      }
+      .type-tag {
+        color: #fff;
+        padding: 8px 10px;
+        border-radius: 6px;
+        margin-right: 10px;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        font-size: 26px;
+      }
+      .zhuli {
+        background: linear-gradient(left, rgb(43, 197, 62), rgb(7, 191, 135));
+      }
+      .pintuan {
+        background: linear-gradient(left, rgb(255, 52, 50), rgb(255, 96, 0));
+      }
+    }
+  }
+  .middle-wrap {
+    .goods-group {
+      display: flex;
+      padding: 30px;
+      &:not(:first-child) {
+        @include top-line(30px);
+      }
+      .cover {
+        flex-shrink: 0;
+        margin-right: 30px;
+        width: 180px;
+        height: 180px;
+        @include img();
+      }
+      .info-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+        .info {
+          .title {
+            @include ellipsis-line();
+          }
+          .unit {
+            font-size: 26px;
+            color: $color-grey;
+            margin-top: 10px;
+          }
+        }
+        .price {
+          @include price-with-small-symbol(32px, $price-color, 5px, 15px);
+        }
+        .qty {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          font-size: 24px;
+          color: $color-grey;
+        }
+      }
+    }
+    .qty-wrap {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 28px;
+      padding: 20px 30px;
+      .grey {
+        color: $color-grey;
+      }
+      .order-price {
+        white-space: nowrap;
+        margin-left: 30px;
+        .price {
+          @include price-with-small-symbol(28px, #000, 5px, 15px);
+          margin-left: 10px;
+        }
+      }
+    }
+    .after-state {
+      text-align: right;
+      font-size: 28px;
+      padding: 0 30px 20px 30px;
+      color: rgb(235, 76, 40);
+    }
+  }
+}
